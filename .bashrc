@@ -40,7 +40,13 @@ unset color_prompt force_color_prompt
 BROWSER=/usr/bin/opera
 EDITOR=/usr/bin/vim
 
+#auto prepend cd to directory names
 shopt -s autocd
+
+#show suggestions on missing commands
+if [[ -f /usr/share/dock/pkgfile/command-not-found.bash ]]; then
+	source /usr/share/doc/pkgfile/command-not-found.bash
+fi
 
 export NVM_DIR="/home/seitz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
