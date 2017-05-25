@@ -37,7 +37,7 @@ fi
 
 unset color_prompt force_color_prompt
 
-BROWSER=/usr/bin/chromium
+BROWSER=/usr/bin/opera
 EDITOR=/usr/bin/vim
 
 shopt -s autocd
