@@ -40,6 +40,8 @@ unset color_prompt force_color_prompt
 BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/vim
 
+shopt -s autocd
+
 export NVM_DIR="/home/seitz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
