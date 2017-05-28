@@ -10,6 +10,8 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+-- Add network widget
+local net_widgets = require("net_widgets")
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
 
@@ -183,7 +185,12 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    --awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+
+    local names = {"st", "web", "dev", "4", "5", "6", "7", "8", "spotify"}
+    local l = awful.layout.suit
+    local layouts =  {l.max.fullscreen, l.max.fullscreen, l.tile, l.tile, l.fair, l.fair, l.fair, l.fair, l.max.fullscreen}
+    awful.tag(names, s, layouts)
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -220,6 +227,7 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
+	    net_widgets.wireless({interface="wlan0"})
         },
     }
 end)
@@ -557,4 +565,8 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+-- }}}
+--
+-- {{{ autstart apps
+awful.spawn("nm-applet")
 -- }}}
