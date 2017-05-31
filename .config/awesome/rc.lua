@@ -10,8 +10,9 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
--- Add network widget
+-- Add toolbar widget
 local net_widgets = require("net_widgets")
+local battery_widget = require("battery-widget")
 -- Enable VIM help for hotkeys widget when client with matching name is opened:
 require("awful.hotkeys_popup.keys.vim")
 
@@ -187,9 +188,9 @@ awful.screen.connect_for_each_screen(function(s)
     -- Each screen has its own tag table.
     --awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
-    local names = {"st", "web", "dev", "4", "5", "6", "7", "8", "spotify"}
+    local names = {"st", "web", "dev", "4", "5", "6", "7", "spotify", "settings"}
     local l = awful.layout.suit
-    local layouts =  {l.max.fullscreen, l.max.fullscreen, l.tile, l.tile, l.fair, l.fair, l.fair, l.fair, l.max.fullscreen}
+    local layouts =  {l.max.fullscreen, l.max.fullscreen, l.tile, l.tile, l.fair, l.fair, l.fair, l.max.fullscreen, l.tile}
     awful.tag(names, s, layouts)
 
     -- Create a promptbox for each screen
@@ -211,6 +212,13 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
+    battery = battery_widget({
+	adapter="BAT0",
+	battery_prefix="  Bat: ",
+	limits={{25, "red"}, {50, "orange"}, {100, "green"}},
+	listen=true,
+	timeout=10})
+
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -227,7 +235,8 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
-	    net_widgets.wireless({interface="wlan0"})
+	    net_widgets.wireless({interface="wlan0"}),
+	    battery
         },
     }
 end)
