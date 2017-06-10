@@ -1,5 +1,5 @@
-colorscheme murphy
-
+:colorscheme murphy
+:set number
 " The ArchLinux global vimrc - setting only a few sane defaults
 "
 " Maintainer:      Thomas Dziedzic [gostrc@gmail.com]
