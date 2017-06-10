@@ -2,7 +2,7 @@
 # Maintainer: Christoph Vigano <mail@cvigano.de>
 
 pkgname=st
-pkgver=0.7
+pkgver=master
 pkgrel=1
 pkgdesc='A simple virtual terminal emulator for X.'
 arch=('i686' 'x86_64')
@@ -10,16 +10,28 @@ license=('MIT')
 depends=('libxft' 'libxext' 'xorg-fonts-misc')
 makedepends=('ncurses')
 url="http://st.suckless.org"
-source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz
-        config.h)
-md5sums=('29b2a599cf1511c8062ed8f025c84c63'
-         'da1b222a9fe4f3a85fdcc29ad10875b2')
+_patches=(http://st.suckless.org/patches/st-scrollback-20170329-149c0d3.diff
+          http://st.suckless.org/patches/st-scrollback-mouse-20170427-5a10aca.diff
+	  http://st.suckless.org/patches/st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
+source=(st-master.tar.gz
+        config.h
+	"${_patches[@]}")
+md5sums=('0ab55597a159aea89cdedffa1616d813'
+         'bba84819c0b0bc93788a9ae9476fff98'
+         'd858964e5123f6279a6f45ad57131ad7'
+         '289cecdaa5421208de623958ee727614'
+         '7c45639ae262c77b8aadd2b8d44d92fe')
+
 
 prepare() {
   cd "$srcdir"/$pkgname-$pkgver
   # skip terminfo which conflicts with nsurses
   sed -i '/\@tic /d' Makefile
   cp "$srcdir"/config.h config.h
+  for patch in "${_patches[@]}"; do
+    echo "applying patch $(basename $patch)..."
+    patch -Np1 -i "$srcdir/$(basename $patch)"
+  done
 }
 
 build() {
