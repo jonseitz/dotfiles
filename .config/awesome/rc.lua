@@ -188,7 +188,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Each screen has its own tag table.
     --awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
-    local names = {"st", "web", "dev", "4", "5", "6", "7", "spotify", "settings"}
+    local names = {"terminal", "web", "dev", "4", "5", "6", "7", "spotify", "dashboard"}
     local l = awful.layout.suit
     local layouts =  {l.max.fullscreen, l.max.fullscreen, l.tile, l.tile, l.fair, l.fair, l.fair, l.max.fullscreen, l.tile}
     awful.tag(names, s, layouts)
@@ -574,7 +574,3 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
---
--- {{{ autstart apps
--- }}}
