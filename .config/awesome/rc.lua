@@ -1,6 +1,8 @@
 -- Standard awesome library
 local gears = require("gears")
+local gfs = require("gears.filesystem")
 local awful = require("awful")
+local lain = require("lain")
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
@@ -215,6 +217,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
     local battery_exists = posix.stat('/sys/class/power_supply/BAT0/capacity', 'type') ~= nil
+--    local battery_exists = gfs.dir_readable('/sys/class/power_supply/BAT0/capacity')
     local battery = 'AC'
     if (battery_exists) 
     then
@@ -225,6 +228,8 @@ awful.screen.connect_for_each_screen(function(s)
 	  listen=true,
 	  timeout=10})
     end 
+
+    local memwidget = lain.widget.mem();
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -242,6 +247,7 @@ awful.screen.connect_for_each_screen(function(s)
             mytextclock,
 	    net_widgets.wireless({interface="wlan0"}),
 	    battery,
+	    memwidget.widget,
             s.mylayoutbox
         },
     }
