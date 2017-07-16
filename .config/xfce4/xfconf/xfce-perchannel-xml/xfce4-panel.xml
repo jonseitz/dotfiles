@@ -6,22 +6,20 @@
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=6;x=499;y=12"/>
-      <property name="size" type="uint" value="24"/>
+      <property name="size" type="uint" value="32"/>
       <property name="leave-opacity" type="uint" value="90"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
-        <value type="int" value="14"/>
         <value type="int" value="15"/>
         <value type="int" value="13"/>
         <value type="int" value="5"/>
         <value type="int" value="3"/>
-        <value type="int" value="16"/>
+        <value type="int" value="6"/>
         <value type="int" value="4"/>
         <value type="int" value="7"/>
         <value type="int" value="8"/>
         <value type="int" value="12"/>
-        <value type="int" value="6"/>
         <value type="int" value="9"/>
       </property>
       <property name="length" type="uint" value="100"/>
@@ -41,6 +39,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="networkmanager applet"/>
+        <value type="string" value="synapse"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="battery"/>
@@ -51,8 +50,6 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
-    <property name="plugin-14" type="string" value="xfce4-verve-plugin"/>
     <property name="plugin-15" type="string" value="tasklist"/>
-    <property name="plugin-16" type="string" value="wavelan"/>
   </property>
 </channel>
