@@ -37,6 +37,7 @@
     <property name="plugin-5" type="string" value="systemload"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="slack"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="synapse"/>
       </property>
