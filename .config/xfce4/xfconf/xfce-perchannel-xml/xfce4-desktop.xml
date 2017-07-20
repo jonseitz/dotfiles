@@ -23,9 +23,9 @@
         <property name="workspace2" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/Overlap.png"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/CyMa.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
-          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace3" type="empty">
@@ -41,22 +41,32 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/gfn_vinyldesktop.png"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/agon_wallpaper.png"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
         </property>
         <property name="workspace2" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/image_1.png"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="3"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace3" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/Sound_Bars_2880x1880.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
+          <property name="backdrop-cycle-period" type="int" value="5"/>
         </property>
       </property>
       <property name="monitor2" type="empty">
@@ -81,9 +91,53 @@
           <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
         </property>
       </property>
+      <property name="monitorDP-1-8" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+      </property>
+      <property name="monitorDP-1-1-8" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/images/default.png"/>
+        </property>
+      </property>
     </property>
-    <property name="single-workspace-mode" type="bool" value="false"/>
-    <property name="single-workspace-number" type="int" value="0"/>
+    <property name="single-workspace-mode" type="bool" value="true"/>
+    <property name="single-workspace-number" type="int" value="2"/>
   </property>
   <property name="desktop-menu" type="empty">
     <property name="show-icons" type="bool" value="false"/>
