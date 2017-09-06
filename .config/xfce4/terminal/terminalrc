@@ -27,4 +27,5 @@ MiscSlimTabs=FALSE
 ColorCursor=#bfbfbfbfbfbf
 ColorForeground=#bfbfbfbfbfbf
 ColorBackground=#1f1f24243333
-ColorPalette=#121210102121;#cccc48480303;#0000cbcbc4c4;#f7f7fbfb4141;#7777c3c3ffff;#7d7d2626e1e1;#4d4dbfbf1616;#6c6c76768585;#36363a3a5252;#ffff6d6d0f0f;#2b2b7d7d5454;#d6d6d5d50808;#5f5f8c8ce6e6;#96964242dbdb;#161697972b2b;#9898c2c2e3e3
+ColorPalette=rgb(18,16,33);rgb(204,72,3);rgb(0,203,196);rgb(247,251,65);rgb(30,82,123);rgb(125,38,225);rgb(77,191,22);rgb(108,118,133);rgb(54,58,82);rgb(255,109,15);rgb(43,125,84);rgb(214,213,8);rgb(95,140,230);rgb(150,66,219);rgb(22,151,43);rgb(152,194,227)
+
