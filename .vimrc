@@ -1,4 +1,5 @@
-:colorscheme murphy
+execute pathogen#infect()
+:colorscheme base16-google-dark
 :set number
 " The ArchLinux global vimrc - setting only a few sane defaults
 "
@@ -160,3 +161,5 @@ if has('langmap') && exists('+langremap')
   " compatible).
   set nolangremap
 endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

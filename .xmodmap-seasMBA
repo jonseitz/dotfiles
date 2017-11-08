@@ -2,12 +2,13 @@ clear Control
 clear Mod1
 clear Mod4
 
-keycode 94   = grave asciitilde
-keycode 133  = Alt_L Meta_L 
+keycode 22   = BackSpace Delete
 keycode 64   = Super_L 
-keycode 134  = Alt_R Meta_R 
+keycode 94   = grave asciitilde
 keycode 105  = Super_R
 keycode 108  = Control_R Control_R
+keycode 133  = Alt_L Meta_L 
+keycode 134  = Alt_R Meta_R 
 
 add Control  = Control_L Control_R
 add Mod1     = Alt_L Meta_L Alt_R Meta_R
