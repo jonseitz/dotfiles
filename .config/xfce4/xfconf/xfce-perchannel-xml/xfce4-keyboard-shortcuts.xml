@@ -11,12 +11,25 @@
         <property name="startup-notify" type="empty"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
+      <property name="&lt;Control&gt;&lt;Alt&gt;Escape" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
+      <property name="XF86LogOff" type="empty"/>
+      <property name="Print" type="empty"/>
+      <property name="&lt;Alt&gt;Print" type="empty"/>
       <property name="XF86WWW" type="empty"/>
       <property name="XF86Mail" type="empty"/>
+      <property name="XF86Calendar" type="empty"/>
+      <property name="XF86Memo" type="empty"/>
+      <property name="XF86Terminal" type="empty"/>
+      <property name="XF86Explorer" type="empty"/>
+      <property name="XF86AudioMedia" type="empty"/>
+      <property name="XF86AudioPlay" type="empty"/>
+      <property name="XF86AudioPrev" type="empty"/>
+      <property name="XF86AudioNext" type="empty"/>
+      <property name="XF86Calculator" type="empty"/>
     </property>
     <property name="custom" type="empty">
       <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
@@ -35,6 +48,28 @@
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;grave" type="string" value="xfce4-terminal --drop-down"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;at" type="string" value="/home/jseitz/.config/displaysetup.sh"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;exclam" type="string" value="/home/jseitz/.config/laptopsetup.sh"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;underscore" type="string" value="/usr/bin/xdotool  key --clearmodifiers --delay 200 emdash"/>
+      <property name="&lt;Shift&gt;&lt;Alt&gt;dollar" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;Shift_R" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;numbersign" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;dollar" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;numbersign" type="string" value="scrot &apos;/home/jseitz/Desktop/%Y%m%d_%H%M%S_scrot.png&apos;">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;dollar" type="string" value="scrot --select &quot;/home/jseitz/Desktop/%Y%m%d_%H%M%S_scrot.png&quot;">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>
@@ -149,11 +184,11 @@
       <property name="&lt;Super&gt;Up" type="string" value="maximize_window_key"/>
       <property name="&lt;Alt&gt;grave" type="string" value="switch_window_key"/>
       <property name="&lt;Alt&gt;w" type="string" value="close_window_key"/>
-      <property name="&lt;Super&gt;1" type="string" value="tile_up_left_key"/>
-      <property name="&lt;Super&gt;2" type="string" value="tile_up_right_key"/>
       <property name="&lt;Super&gt;3" type="string" value="tile_down_left_key"/>
       <property name="&lt;Super&gt;4" type="string" value="tile_down_right_key"/>
       <property name="&lt;Alt&gt;Tab" type="string" value="cycle_windows_key"/>
+      <property name="&lt;Super&gt;2" type="string" value="tile_up_left_key"/>
+      <property name="&lt;Super&gt;1" type="string" value="tile_up_right_key"/>
     </property>
   </property>
   <property name="providers" type="array">
