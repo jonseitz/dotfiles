@@ -24,8 +24,11 @@ MiscDefaultWorkingDir=
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
-ColorCursor=#bfbfbfbfbfbf
-ColorForeground=#bfbfbfbfbfbf
-ColorBackground=#1f1f24243333
-ColorPalette=rgb(18,16,33);rgb(204,72,3);rgb(0,203,196);rgb(247,251,65);rgb(30,82,123);rgb(125,38,225);rgb(77,191,22);rgb(108,118,133);rgb(54,58,82);rgb(255,109,15);rgb(43,125,84);rgb(214,213,8);rgb(95,140,230);rgb(150,66,219);rgb(22,151,43);rgb(152,194,227)
+ShortcutsNoMnemonics=TRUE
+ShortcutsNoHelpkey=TRUE
+ShortcutsNoMenukey=TRUE
+ColorCursor=x
+ColorForeground=#a3a3a3
+ColorPalette=#1f2022;#f2241f;#67b11d;#b1951d;#4f97d7;#a31db1;#2d9574;#a3a3a3;#585858;#f2241f;#67b11d;#b1951d;#4f97d7;#a31db1;#2d9574;#f8f8f8
+ColorBackground=#1f2022
 

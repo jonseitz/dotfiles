@@ -58,3 +58,7 @@ fi
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
+
+if [ -f ~/.config/.mac_aliases ]; then
+. ~/.config/.mac_aliases
+fi
