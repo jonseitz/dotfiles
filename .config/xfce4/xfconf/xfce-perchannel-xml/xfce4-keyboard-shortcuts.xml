@@ -145,15 +145,17 @@
       <property name="&lt;Super&gt;Right" type="string" value="tile_right_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Right" type="string" value="next_workspace_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Left" type="string" value="prev_workspace_key"/>
-      <property name="&lt;Super&gt;Down" type="string" value="maximize_vert_key"/>
-      <property name="&lt;Super&gt;Up" type="string" value="maximize_window_key"/>
       <property name="&lt;Alt&gt;grave" type="string" value="switch_window_key"/>
       <property name="&lt;Alt&gt;w" type="string" value="close_window_key"/>
-      <property name="&lt;Super&gt;1" type="string" value="tile_up_left_key"/>
-      <property name="&lt;Super&gt;2" type="string" value="tile_up_right_key"/>
       <property name="&lt;Super&gt;3" type="string" value="tile_down_left_key"/>
       <property name="&lt;Super&gt;4" type="string" value="tile_down_right_key"/>
       <property name="&lt;Alt&gt;Tab" type="string" value="cycle_windows_key"/>
+      <property name="&lt;Super&gt;2" type="string" value="tile_up_left_key"/>
+      <property name="&lt;Super&gt;1" type="string" value="tile_up_right_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="fill_horiz_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="fill_vert_key"/>
+      <property name="&lt;Super&gt;Up" type="string" value="maximize_window_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="fill_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">

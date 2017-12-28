@@ -1,6 +1,9 @@
 execute pathogen#infect()
 colorscheme base16-google-dark
 :set number
+set tabstop=2 
+set expandtab
+set shiftwidth=4
 " The ArchLinux global vimrc - setting only a few sane defaults
 "
 " Maintainer:      Thomas Dziedzic [gostrc@gmail.com]
