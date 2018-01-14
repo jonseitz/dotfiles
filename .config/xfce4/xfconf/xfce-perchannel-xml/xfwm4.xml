@@ -3,7 +3,7 @@
 <channel name="xfwm4" version="1.0">
   <property name="general" type="empty">
     <property name="activate_action" type="string" value="switch"/>
-    <property name="borderless_maximize" type="bool" value="true"/>
+    <property name="borderless_maximize" type="bool" value="false"/>
     <property name="box_move" type="bool" value="false"/>
     <property name="box_resize" type="bool" value="false"/>
     <property name="button_layout" type="string" value="|"/>
@@ -83,5 +83,9 @@
     <property name="wrap_windows" type="bool" value="true"/>
     <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
+    <property name="margin_top" type="int" value="42"/>
+    <property name="margin_right" type="int" value="10"/>
+    <property name="margin_bottom" type="int" value="10"/>
+    <property name="margin_left" type="int" value="10"/>
   </property>
 </channel>
