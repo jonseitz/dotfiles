@@ -2,7 +2,7 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Arc-Dark"/>
+    <property name="ThemeName" type="string" value="Equilux-compact"/>
     <property name="IconThemeName" type="string" value="Paper"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
@@ -33,6 +33,6 @@
     <property name="MenuBarAccel" type="empty"/>
     <property name="CursorThemeName" type="string" value="Paper"/>
     <property name="CursorThemeSize" type="empty"/>
-    <property name="DecorationLayout" type="empty"/>
+    <property name="DecorationLayout" type="string" value=":"/>
   </property>
 </channel>

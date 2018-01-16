@@ -189,6 +189,8 @@
       <property name="&lt;Alt&gt;Tab" type="string" value="cycle_windows_key"/>
       <property name="&lt;Super&gt;2" type="string" value="tile_up_left_key"/>
       <property name="&lt;Super&gt;1" type="string" value="tile_up_right_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="fill_horiz_key"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="fill_vert_key"/>
     </property>
   </property>
   <property name="providers" type="array">
