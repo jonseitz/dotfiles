@@ -154,8 +154,7 @@
       <property name="&lt;Super&gt;1" type="string" value="tile_up_right_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="fill_horiz_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="fill_vert_key"/>
-      <property name="&lt;Super&gt;Up" type="string" value="fill_window_key"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="maximize_window_key"/>
+      <property name="&lt;Super&gt;Up" type="string" value="maximize_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
