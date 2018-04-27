@@ -37,7 +37,7 @@ fi
 
 unset color_prompt force_color_prompt
 
-BROWSER=/usr/bin/chromium-browser
+BROWSER=/usr/bin/chromium-browserot
 EDITOR=/usr/bin/neovim
 
 #auto prepend cd to directory names
@@ -56,9 +56,12 @@ if [[ -f /etc/bash_completion ]]; then
 fi
 
 if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+	. ~/.bash_aliases
 fi
 
+if [ -f ~/.git_completion ]; then
+	source ~/.git_completion
+fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
