@@ -37,8 +37,8 @@ fi
 
 unset color_prompt force_color_prompt
 
-BROWSER=/usr/bin/opera
-EDITOR=/usr/bin/vim
+BROWSER=/usr/bin/chromium-browser
+EDITOR=/usr/bin/neovim
 
 #auto prepend cd to directory names
 shopt -s autocd
@@ -63,3 +63,4 @@ fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:/opt/mssql-tools/bin"
+export VAGRANT_DEFAULT_PROVIDER=virtualbox

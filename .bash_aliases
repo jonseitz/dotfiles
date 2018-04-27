@@ -1,4 +1,6 @@
 alias ls='ls --color=auto'
-alias ll='ls --color=auto -lah'
-#alias subl='subl3 .'
+#alias ll='ls --color=auto -lah'
+alias ll='exa -la --git'
+#alias lll='exa --tree --level=2'
+alias vim='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
