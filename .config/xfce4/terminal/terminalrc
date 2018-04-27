@@ -1,6 +1,6 @@
 [Configuration]
 FontName=Hack 12
-MiscAlwaysShowTabs=FALSE
+MiscAlwaysShowTabs=TRUE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
 MiscBordersDefault=TRUE
@@ -8,7 +8,7 @@ MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
 MiscDefaultGeometry=80x36
 MiscInheritGeometry=FALSE
-MiscMenubarDefault=TRUE
+MiscMenubarDefault=FALSE
 MiscMouseAutohide=FALSE
 MiscMouseWheelZoom=TRUE
 MiscToolbarDefault=FALSE
@@ -23,11 +23,13 @@ MiscCopyOnSelect=FALSE
 MiscDefaultWorkingDir=
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
-MiscSlimTabs=TRUE
+MiscSlimTabs=FALSE
 ColorCursor=x
-ColorForeground=#c5c8c6
-ColorBackground=#1d1f21
-ColorPalette=#1d1f21;#CC342B;#198844;#FBA922;#3971ED;#A36AC7;#3971ED;#c5c8c6;#969896;#CC342B;#198844;#FBA922;#3971ED;#A36AC7;#3971ED;#ffffff
+ColorForeground=#a3a3a3
+ColorPalette=#1f2022;#f2241f;#67b11d;#b1951d;#4f97d7;#a31db1;#2d9574;#a3a3a3;#585858;#f2241f;#67b11d;#b1951d;#4f97d7;#a31db1;#2d9574;#f8f8f8
+ColorBackground=#1f2022
 ShortcutsNoHelpkey=TRUE
 ShortcutsNoMenukey=TRUE
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
+ScrollingUnlimited=TRUE
 
