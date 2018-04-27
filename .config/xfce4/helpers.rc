@@ -1,3 +1,4 @@
-WebBrowser=chromium
 FileManager=Thunar
+MailReader=thunderbird
 
+WebBrowser=chromium-browser
