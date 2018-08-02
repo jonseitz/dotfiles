@@ -1,9 +1,8 @@
 alias ls='ls --color=auto'
-alias ll='ls --color=auto -lAh'
+alias ll='exa -la'
+alias lu='du -hd1 | sort -h'
 alias subl='subl3 .'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias doom='chocolate-doom -fullscreen'
-
-if [ $(hostname -s) = "seasMBA" ]; then
-	xmodmap $HOME/.xmodmap-seasMBA
-fi
+alias wakeplex='wol 78:2b:cb:a3:21:16'
+alias vim="nvim"
