@@ -18,7 +18,7 @@ alert = ${xrdb:color3:#b1951d}
 
 
 [bar/main]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:DP-1-1-8}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -351,5 +351,9 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+[bar/secondary]
+inherit=bar/main
+monitor = ${env:MONITOR:DP-1-8}
 
 ; vim:ft=dosini
