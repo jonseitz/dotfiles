@@ -37,9 +37,6 @@ fi
 
 unset color_prompt force_color_prompt
 
-BROWSER=/usr/bin/firefox
-EDITOR=/usr/bin/nvim
-
 #auto prepend cd to directory names
 shopt -s autocd
 
@@ -59,5 +56,8 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-export PATH="$HOME/.cargo/bin:$HOME/.gem/ruby/2.5.0/bin:$PATH"
+if [ -f ~/.bash_vars ]; then
+. ~/.bash_vars
+fi
+export PATH="$HOME/.cargo/bin:$HOME/.gem/ruby/2.5.0/bin:$(npm config --global get prefix)/bin:$PATH"
 

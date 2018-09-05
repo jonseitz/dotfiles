@@ -5,3 +5,5 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export PATH="$HOME/.cargo/bin:$HOME/.gem/ruby/2.5.0/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

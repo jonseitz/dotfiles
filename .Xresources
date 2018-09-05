@@ -1,3 +1,4 @@
+URxvt*termName: rxvt-256color
 URxvt*font: xft:hack:size=12, \
             -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1, \
             xft:unifont:pixelsize=10
@@ -12,7 +13,8 @@ URxvt.tabbedex.no-tabbedex-keys: True
 URxvt.tabbedex.tabbar-bg: 15
 URxvt.tabbedex.tabbar-fg: 5
 
-
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
 
 URxvt.modifier: alt
 

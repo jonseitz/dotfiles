@@ -1,0 +1,3 @@
+BROWSER=/usr/bin/firefox
+EDITOR=/usr/bin/nvim
+TERMINAL=/usr/bin/urxvt
