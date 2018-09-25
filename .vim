@@ -1,0 +1,1 @@
+/home/seitz/.config/nvim/
