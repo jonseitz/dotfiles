@@ -1,3 +1,4 @@
 BROWSER=/usr/bin/firefox
 EDITOR=/usr/bin/nvim
+GIT_EDITOR=$EDITOR
 TERMINAL=/usr/bin/urxvt
