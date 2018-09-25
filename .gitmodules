@@ -16,3 +16,195 @@
 [submodule ".config/nvim/bundle/vim-autoformat"]
 	path = .config/nvim/bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "builds/base16-xfce4-terminal"]
+	path = builds/base16-xfce4-terminal
+	url = https://aur.archlinux.org/base16-xfce4-terminal.git
+[submodule "builds/bash-pipes"]
+	path = builds/bash-pipes
+	url = https://aur.archlinux.org/bash-pipes.git
+[submodule "builds/cdm-git"]
+	path = builds/cdm-git
+	url = https://aur.archlinux.org/cdm-git.git
+[submodule "builds/coin"]
+	path = builds/coin
+	url = https://aur.archlinux.org/coin.git
+[submodule "builds/cower"]
+	path = builds/cower
+	url = https://aur.archlinux.org/cower.git
+[submodule "builds/digikam-git"]
+	path = builds/digikam-git
+	url = https://aur.archlinux.org/digikam-git.git
+[submodule "builds/emojione-color-font"]
+	path = builds/emojione-color-font
+	url = https://aur.archlinux.org/emojione-color-font.git
+[submodule "builds/equilux-theme"]
+	path = builds/equilux-theme
+	url = https://aur.archlinux.org/equilux-theme.git
+[submodule "builds/extra-cmake-modules-git"]
+	path = builds/extra-cmake-modules-git
+	url = https://aur.archlinux.org/extra-cmake-modules-git.git
+[submodule "builds/google-chrome"]
+	path = builds/google-chrome
+	url = https://aur.archlinux.org/google-chrome.git
+[submodule "builds/hplip"]
+	path = builds/hplip
+	url = https://aur.archlinux.org/hplip.git
+[submodule "builds/hplip-plugin"]
+	path = builds/hplip-plugin
+	url = https://aur.archlinux.org/hplip-plugin.git
+[submodule "builds/kcm-pointing-devices-git"]
+	path = builds/kcm-pointing-devices-git
+	url = https://aur.archlinux.org/kcm-pointing-devices-git.git
+[submodule "builds/kindlegen"]
+	path = builds/kindlegen
+	url = https://aur.archlinux.org/kindlegen.git
+[submodule "builds/kubectl-bin"]
+	path = builds/kubectl-bin
+	url = https://aur.archlinux.org/kubectl-bin.git
+[submodule "builds/libgnomecanvasmm"]
+	path = builds/libgnomecanvasmm
+	url = https://aur.archlinux.org/libgnomecanvasmm.git
+[submodule "builds/libinput-gestures"]
+	path = builds/libinput-gestures
+	url = https://aur.archlinux.org/libinput-gestures.git
+[submodule "builds/libkipi-git"]
+	path = builds/libkipi-git
+	url = https://aur.archlinux.org/libkipi-git.git
+[submodule "builds/libksane-git"]
+	path = builds/libksane-git
+	url = https://aur.archlinux.org/libksane-git.git
+[submodule "builds/libspotify"]
+	path = builds/libspotify
+	url = https://aur.archlinux.org/libspotify.git
+[submodule "builds/makemkv"]
+	path = builds/makemkv
+	url = https://aur.archlinux.org/makemkv.git
+[submodule "builds/masterpdfeditor"]
+	path = builds/masterpdfeditor
+	url = https://aur.archlinux.org/masterpdfeditor.git
+[submodule "builds/materia-theme"]
+	path = builds/materia-theme
+	url = https://aur.archlinux.org/materia-theme.git
+[submodule "builds/minikube-bin"]
+	path = builds/minikube-bin
+	url = https://aur.archlinux.org/minikube-bin.git
+[submodule "builds/mopidy-spotify"]
+	path = builds/mopidy-spotify
+	url = https://aur.archlinux.org/mopidy-spotify.git
+[submodule "builds/mopidy-spotify-web"]
+	path = builds/mopidy-spotify-web
+	url = https://aur.archlinux.org/mopidy-spotify-web.git
+[submodule "builds/msodbcsql"]
+	path = builds/msodbcsql
+	url = https://aur.archlinux.org/msodbcsql.git
+[submodule "builds/mssql-tools"]
+	path = builds/mssql-tools
+	url = https://aur.archlinux.org/mssql-tools.git
+[submodule "builds/multiload-ng-common"]
+	path = builds/multiload-ng-common
+	url = https://aur.archlinux.org/multiload-ng-common.git
+[submodule "builds/neovim-drop-in"]
+	path = builds/neovim-drop-in
+	url = https://aur.archlinux.org/neovim-drop-in.git
+[submodule "builds/nvm"]
+	path = builds/nvm
+	url = https://aur.archlinux.org/nvm.git
+[submodule "builds/oni"]
+	path = builds/oni
+	url = https://aur.archlinux.org/oni.git
+[submodule "builds/ovpngen"]
+	path = builds/ovpngen
+	url = https://aur.archlinux.org/ovpngen.git
+[submodule "builds/paper-gtk-theme-git"]
+	path = builds/paper-gtk-theme-git
+	url = https://aur.archlinux.org/paper-gtk-theme-git.git
+[submodule "builds/paper-icon-theme-git"]
+	path = builds/paper-icon-theme-git
+	url = https://aur.archlinux.org/paper-icon-theme-git.git
+[submodule "builds/pepper-flash"]
+	path = builds/pepper-flash
+	url = https://aur.archlinux.org/pepper-flash.git
+[submodule "builds/phantomjs"]
+	path = builds/phantomjs
+	url = https://aur.archlinux.org/phantomjs.git
+[submodule "builds/polybar"]
+	path = builds/polybar
+	url = https://aur.archlinux.org/polybar.git
+[submodule "builds/pty.js"]
+	path = builds/pty.js
+	url = https://aur.archlinux.org/pty.js.git
+[submodule "builds/pulsemixer"]
+	path = builds/pulsemixer
+	url = https://aur.archlinux.org/pulsemixer.git
+[submodule "builds/python2-pyspotify"]
+	path = builds/python2-pyspotify
+	url = https://aur.archlinux.org/python2-pyspotify.git
+[submodule "builds/python2-spotipy"]
+	path = builds/python2-spotipy
+	url = https://aur.archlinux.org/python2-spotipy.git
+[submodule "builds/reflector-timer"]
+	path = builds/reflector-timer
+	url = https://aur.archlinux.org/reflector-timer.git
+[submodule "builds/robo3t-bin"]
+	path = builds/robo3t-bin
+	url = https://aur.archlinux.org/robo3t-bin.git
+[submodule "builds/signal"]
+	path = builds/signal
+	url = https://aur.archlinux.org/signal.git
+[submodule "builds/siji-git"]
+	path = builds/siji-git
+	url = https://aur.archlinux.org/siji-git.git
+[submodule "builds/slack-desktop"]
+	path = builds/slack-desktop
+	url = https://aur.archlinux.org/slack-desktop.git
+[submodule "builds/solaar"]
+	path = builds/solaar
+	url = https://aur.archlinux.org/solaar.git
+[submodule "builds/spotify"]
+	path = builds/spotify
+	url = https://aur.archlinux.org/spotify.git
+[submodule "builds/sublime-text-dev"]
+	path = builds/sublime-text-dev
+	url = https://aur.archlinux.org/sublime-text-dev.git
+[submodule "builds/teigha-file-converter"]
+	path = builds/teigha-file-converter
+	url = https://aur.archlinux.org/teigha-file-converter.git
+[submodule "builds/timg"]
+	path = builds/timg
+	url = https://aur.archlinux.org/timg.git
+[submodule "builds/ttf-google-fonts-git"]
+	path = builds/ttf-google-fonts-git
+	url = https://aur.archlinux.org/ttf-google-fonts-git.git
+[submodule "builds/ttf-merriweather"]
+	path = builds/ttf-merriweather
+	url = https://aur.archlinux.org/ttf-merriweather.git
+[submodule "builds/ttf-merriweather-sans"]
+	path = builds/ttf-merriweather-sans
+	url = https://aur.archlinux.org/ttf-merriweather-sans.git
+[submodule "builds/ttf-ms-fonts"]
+	path = builds/ttf-ms-fonts
+	url = https://aur.archlinux.org/ttf-ms-fonts.git
+[submodule "builds/ttf-opensans"]
+	path = builds/ttf-opensans
+	url = https://aur.archlinux.org/ttf-opensans.git
+[submodule "builds/ttf-oswald"]
+	path = builds/ttf-oswald
+	url = https://aur.archlinux.org/ttf-oswald.git
+[submodule "builds/ttf-quintessential"]
+	path = builds/ttf-quintessential
+	url = https://aur.archlinux.org/ttf-quintessential.git
+[submodule "builds/ttf-signika"]
+	path = builds/ttf-signika
+	url = https://aur.archlinux.org/ttf-signika.git
+[submodule "builds/ttf-unifont"]
+	path = builds/ttf-unifont
+	url = https://aur.archlinux.org/ttf-unifont.git
+[submodule "builds/urxvt-tabbedex-mina86-git"]
+	path = builds/urxvt-tabbedex-mina86-git
+	url = https://aur.archlinux.org/urxvt-tabbedex-mina86-git.git
+[submodule "builds/virtualbox-ext-oracle"]
+	path = builds/virtualbox-ext-oracle
+	url = https://aur.archlinux.org/virtualbox-ext-oracle.git
+[submodule "builds/xed"]
+	path = builds/xed
+	url = https://aur.archlinux.org/xed.git
