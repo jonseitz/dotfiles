@@ -164,6 +164,6 @@ if has('langmap') && exists('+langremap')
   " compatible).
   set nolangremap
 endif
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree 
+tnoremap <Esc> <C-\><C-n>
+map <C-\> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDtree") && b:NERDtree.isTabTree()) | q | endif 
