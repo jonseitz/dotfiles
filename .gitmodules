@@ -1,0 +1,18 @@
+[submodule ".config/nvim/bundle/nerdtree-git-plugin"]
+	path = .config/nvim/bundle/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule ".config/nvim/bundle/nerdtree"]
+	path = .config/nvim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule ".config/nvim/bundle/ale"]
+	path = .config/nvim/bundle/ale
+	url = https://github.com/w0rp/ale.git
+[submodule ".config/nvim/bundle/base16-vim"]
+	path = .config/nvim/bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule ".config/nvim/bundle/vim-javascript"]
+	path = .config/nvim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule ".config/nvim/bundle/vim-autoformat"]
+	path = .config/nvim/bundle/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat.git
