@@ -1,3 +1,4 @@
+#include "/home/seitz/.config/base16-xresources/xresources/base16-seti-256.Xresources"
 URxvt*termName: rxvt-256color
 URxvt*font: xft:hack:size=12, \
             -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1, \
@@ -35,30 +36,29 @@ URxvt.keysym.Control-Shift-C: clipboard:copy
 URxvt.keysym.Shift-Control-V: clipboard:paste
 
 
-*foreground: #a3a3a3
-*background: #1f2022
+!foreground: #a3a3a3
+!*background: #1f2022
 
-*color0:#1f2022
-*color8: #585858
+!*color0:#1f2022
+!*color8: #585858
 
-*color1: #f2241f
-*color9: #f2241f
+!*color1: #f2241f
+!*color9: #f2241f
 
-*color2: #67b11d
-*color10: #67b11d
+!*color2: #67b11d
+!*color10: #67b11d
 
-*color3: #b1951d
-*color11: #b1951d
+!*color3: #b1951d
+!*color11: #b1951d
 
-*color4: #4f97d7
-*color12: #4f97d7
+!*color4: #4f97d7
+!*color12: #4f97d7
 
-*color5: #a31db1
-*color13: #a31db1
+!*color5: #a31db1
+!*color13: #a31db1
 
-*color6: #2d9574
-*color14: #2d9574
+!*color6: #2d9574
+!*color14: #2d9574
 
-*color7: #a3a3a3
-*color15: #f8f8f8
-
+!*color7: #a3a3a3
+!*color15: #f8f8f8

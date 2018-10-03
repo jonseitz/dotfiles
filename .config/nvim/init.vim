@@ -1,9 +1,14 @@
 execute pathogen#infect()
-colorscheme base16-google-dark
 :set number
 set tabstop=2 
 set expandtab
 set shiftwidth=2
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
 " The ArchLinux global vimrc - setting only a few sane defaults
 "
 " Maintainer:      Thomas Dziedzic [gostrc@gmail.com]

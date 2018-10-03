@@ -59,5 +59,14 @@ fi
 if [ -f ~/.bash_vars ]; then
 . ~/.bash_vars
 fi
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+eval base16_seti
+
 export PATH="$HOME/.cargo/bin:$HOME/.gem/ruby/2.5.0/bin:$(npm config --global get prefix)/bin:$PATH"
 
