@@ -16,9 +16,6 @@
 [submodule ".config/nvim/bundle/vim-autoformat"]
 	path = .config/nvim/bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
-[submodule "builds/base16-xfce4-terminal"]
-	path = builds/base16-xfce4-terminal
-	url = https://aur.archlinux.org/base16-xfce4-terminal.git
 [submodule "builds/bash-pipes"]
 	path = builds/bash-pipes
 	url = https://aur.archlinux.org/bash-pipes.git
@@ -130,9 +127,6 @@
 [submodule "builds/polybar"]
 	path = builds/polybar
 	url = https://aur.archlinux.org/polybar.git
-[submodule "builds/pty.js"]
-	path = builds/pty.js
-	url = https://aur.archlinux.org/pty.js.git
 [submodule "builds/pulsemixer"]
 	path = builds/pulsemixer
 	url = https://aur.archlinux.org/pulsemixer.git
