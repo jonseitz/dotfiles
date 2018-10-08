@@ -172,3 +172,5 @@ endif
 tnoremap <Esc> <C-\><C-n>
 map <C-\> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDtree") && b:NERDtree.isTabTree()) | q | endif 
+let g:airline#extensions#ale#enabled = 1
+let g:deoplete#enable_at_startup = 1
