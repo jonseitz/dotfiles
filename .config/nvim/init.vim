@@ -3,6 +3,8 @@ execute pathogen#infect()
 set tabstop=2 
 set expandtab
 set shiftwidth=2
+set splitright
+set splitbelow
 
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -170,7 +172,12 @@ if has('langmap') && exists('+langremap')
   set nolangremap
 endif
 tnoremap <Esc> <C-\><C-n>
+nnoremap <Esc> :noh<Enter><Esc>
 map <C-\> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDtree") && b:NERDtree.isTabTree()) | q | endif 
+
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_change = 1
+let g:ale_lint_on_enter = 1
 let g:airline#extensions#ale#enabled = 1
 let g:deoplete#enable_at_startup = 1
