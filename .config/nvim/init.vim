@@ -176,6 +176,15 @@ nnoremap <Esc> :noh<Enter><Esc>
 map <C-\> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDtree") && b:NERDtree.isTabTree()) | q | endif 
 
+let g:NERDSpaceTDelims = 1
+let g:NERDcompactSexyComs = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhiteSpace = 1
+
+let g:javascript_plugin_jsdoc = 1
+
+map <C-_> <Plug>NERDCommenterToggle
+
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_text_change = 1
 let g:ale_lint_on_enter = 1
