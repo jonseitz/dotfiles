@@ -223,3 +223,18 @@
 [submodule ".config/nvim/bundle/denite.nvim"]
 	path = .config/nvim/bundle/denite.nvim
 	url = https://github.com/Shougo/denite.nvim
+[submodule ".config/nvim/bundle/vim-fugitive"]
+	path = .config/nvim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".config/nvim/bundle/vim-gitgutter"]
+	path = .config/nvim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule ".config/nvim/bundle/nerdcommenter"]
+	path = .config/nvim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule ".config/nvim/bundle/vim-jsdoc"]
+	path = .config/nvim/bundle/vim-jsdoc
+	url = https://github.com/heavenshell/vim-jsdoc
+[submodule ".config/nvim/bundle/deoplete.nvim"]
+	path = .config/nvim/bundle/deoplete.nvim
+	url = https://github.com/shougo/deoplete.nvim
