@@ -45,8 +45,6 @@ if [[ -f /usr/share/dock/pkgfile/command-not-found.bash ]]; then
 	source /usr/share/doc/pkgfile/command-not-found.bash
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 if [[ -f /etc/bash_completion ]]; then
     /etc/bash_completion
