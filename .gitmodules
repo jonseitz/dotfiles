@@ -244,3 +244,6 @@
 [submodule "builds/signal-desktop-bin"]
 	path = builds/signal-desktop-bin
 	url = https://aur.archlinux.org/signal-desktop-bin.git
+[submodule ".config/nvim/bundle/deoplete-ternjs"]
+	path = .config/nvim/bundle/deoplete-ternjs
+	url = https://github.com/carlitux/deoplete-ternjs.git
