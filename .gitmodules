@@ -214,9 +214,6 @@
 [submodule ".config/base16-rofi"]
 	path = .config/base16-rofi
 	url = https://github.com/0xdec/base16-rofi.git
-[submodule ".config/nvim/bundle/nvim-typescript"]
-	path = .config/nvim/bundle/nvim-typescript
-	url = https://github.com/mhartington/nvim-typescript.git
 [submodule ".config/nvim/bundle/yats.vim"]
 	path = .config/nvim/bundle/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim.git
