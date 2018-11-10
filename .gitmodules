@@ -244,3 +244,12 @@
 [submodule ".config/nvim/bundle/deoplete-ternjs"]
 	path = .config/nvim/bundle/deoplete-ternjs
 	url = https://github.com/carlitux/deoplete-ternjs.git
+[submodule "builds/nlohmann-json"]
+	path = builds/nlohmann-json
+	url = https://aur.archlinux.org/nlohmann-json.git
+[submodule "builds/auracle-git"]
+	path = builds/auracle-git
+	url = https://aur.archlinux.org/auracle-git.git
+[submodule "builds/urxvt-resize-font-git"]
+	path = builds/urxvt-resize-font-git
+	url = https://aur.archlinux.org/urxvt-resize-font-git.git
