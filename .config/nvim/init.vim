@@ -191,3 +191,8 @@ let g:ale_lint_on_enter = 1
 
 let g:airline#extensions#ale#enabled = 1
 let g:deoplete#enable_at_startup = 1
+
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#include_keywords = 1
+let g:tern#command = ["tern"]
+let g:tern#arguments = ["--persistent"]
