@@ -58,6 +58,10 @@ if [ -f ~/.bash_vars ]; then
 . ~/.bash_vars
 fi
 
+if [ -f ~/.resticrc ]; then
+. ~/.resticrc
+fi
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \

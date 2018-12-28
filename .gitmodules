@@ -253,3 +253,9 @@
 [submodule "builds/urxvt-resize-font-git"]
 	path = builds/urxvt-resize-font-git
 	url = https://aur.archlinux.org/urxvt-resize-font-git.git
+[submodule ".config/nvim/bundle/vim-jsx"]
+	path = .config/nvim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule ".config/nvim/bundle/coc.nvim"]
+	path = .config/nvim/bundle/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git

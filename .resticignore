@@ -1,0 +1,7 @@
+.cache/*
+.thumbnails/*
+Downloads/*
+VirtualBox\ VMs/
+builds/**/*.tar.xz
+builds/**/*.tar.gz
+builds/**/*.deb
