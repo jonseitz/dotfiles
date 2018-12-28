@@ -232,18 +232,12 @@
 [submodule ".config/nvim/bundle/vim-jsdoc"]
 	path = .config/nvim/bundle/vim-jsdoc
 	url = https://github.com/heavenshell/vim-jsdoc
-[submodule ".config/nvim/bundle/deoplete.nvim"]
-	path = .config/nvim/bundle/deoplete.nvim
-	url = https://github.com/shougo/deoplete.nvim
 [submodule "builds/google-cloud-sdk"]
 	path = builds/google-cloud-sdk
 	url = https://aur.archlinux.org/google-cloud-sdk.git
 [submodule "builds/signal-desktop-bin"]
 	path = builds/signal-desktop-bin
 	url = https://aur.archlinux.org/signal-desktop-bin.git
-[submodule ".config/nvim/bundle/deoplete-ternjs"]
-	path = .config/nvim/bundle/deoplete-ternjs
-	url = https://github.com/carlitux/deoplete-ternjs.git
 [submodule "builds/nlohmann-json"]
 	path = builds/nlohmann-json
 	url = https://aur.archlinux.org/nlohmann-json.git

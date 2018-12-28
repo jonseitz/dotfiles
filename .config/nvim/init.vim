@@ -6,6 +6,8 @@ set shiftwidth=2
 set splitright
 set splitbelow
 
+set clipboard+=unnamedplus
+
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
@@ -187,12 +189,5 @@ map <C-_> <Plug>NERDCommenterToggle
 
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_text_change = 1
-let g:ale_lint_on_enter = 1
-
+let g:ale_lint_on_enter = 0
 let g:airline#extensions#ale#enabled = 1
-let g:deoplete#enable_at_startup = 1
-
-let g:deoplete#sources#ternjs#types = 1
-let g:deoplete#sources#ternjs#include_keywords = 1
-let g:tern#command = ["tern"]
-let g:tern#arguments = ["--persistent"]
