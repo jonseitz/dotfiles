@@ -57,7 +57,7 @@ font-3 = unifont:fontformat=truetype:size=12:antialias=false;0
 
 modules-left = i3 mpd 
 modules-center = xwindow
-modules-right = xbacklight volume filesystem memory cpu wlan eth battery temperature date 
+modules-right = volume xbacklight filesystem memory cpu wlan eth battery temperature date 
 
 tray-position = right
 tray-padding = 5
@@ -73,7 +73,7 @@ label = %title:0:30:...%
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = /home
 
 label-mounted = %{F#2d9574}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
@@ -129,6 +129,8 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
+output = ${env:MONITOR:}
+enable-scroll = true
 format = <label> <bar>
 label = BL
 
