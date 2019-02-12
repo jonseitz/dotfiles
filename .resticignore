@@ -1,6 +1,5 @@
-.cache/*
 .thumbnails/*
-builds/
+builds/*
 Downloads/*
 VirtualBox\ VMs/
 builds/**/*.tar.xz
