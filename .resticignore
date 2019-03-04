@@ -1,7 +1,9 @@
 .thumbnails/*
 builds/*
+.cache/*
 Downloads/*
 VirtualBox\ VMs/
 builds/**/*.tar.xz
 builds/**/*.tar.gz
 builds/**/*.deb
+android/*
