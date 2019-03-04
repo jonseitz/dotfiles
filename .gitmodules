@@ -31,9 +31,6 @@
 [submodule "builds/extra-cmake-modules-git"]
 	path = builds/extra-cmake-modules-git
 	url = https://aur.archlinux.org/extra-cmake-modules-git.git
-[submodule "builds/google-chrome"]
-	path = builds/google-chrome
-	url = https://aur.archlinux.org/google-chrome.git
 [submodule "builds/hplip"]
 	path = builds/hplip
 	url = https://aur.archlinux.org/hplip.git
@@ -175,9 +172,6 @@
 [submodule ".config/nvim/bundle/vim-jsdoc"]
 	path = .config/nvim/bundle/vim-jsdoc
 	url = https://github.com/heavenshell/vim-jsdoc
-[submodule "builds/google-cloud-sdk"]
-	path = builds/google-cloud-sdk
-	url = https://aur.archlinux.org/google-cloud-sdk.git
 [submodule "builds/signal-desktop-bin"]
 	path = builds/signal-desktop-bin
 	url = https://aur.archlinux.org/signal-desktop-bin.git
@@ -202,3 +196,6 @@
 [submodule "builds/gtk-theme-shades-of-gray"]
 	path = builds/gtk-theme-shades-of-gray
 	url = https://aur.archlinux.org/gtk-theme-shades-of-gray.git
+[submodule "builds/ungoogled-chromium"]
+	path = builds/ungoogled-chromium
+	url = https://aur.archlinux.org/ungoogled-chromium.git
