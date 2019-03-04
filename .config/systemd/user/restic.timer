@@ -1,9 +1,8 @@
 [Unit]
-Description=Back up computer weekly
+Description=Back up computer daily
 
 [Timer]
-OnBootSec=15min
-OnUnitActiveSec=1w
+OnCalendar=*-*-* 19:00:00
 Persistent=true
 
 [Install]

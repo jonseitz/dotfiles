@@ -1,0 +1,7 @@
+[Unit]
+Description=Run restic backup to backblaze b2
+
+[Service]
+Type=simple
+WorkingDirectory=/home/seitz/
+ExecStart=/usr/bin/restic forget --prune --keep-daily 14 --keep-monthly 12 --keep-yearly 25
