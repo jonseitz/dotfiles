@@ -216,6 +216,5 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+S --release exec scrot --select $HOME/Pictures/screenshots/%Y-%m-%d_%H%M%S.png
 exec_always autorandr --change
 exec_always --no-startup-id sh /home/seitz/.fehbg
-exec --no-startup-id lxsession
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
