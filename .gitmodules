@@ -199,3 +199,6 @@
 [submodule "builds/protonmail-bridge"]
 	path = builds/protonmail-bridge
 	url = https://aur.archlinux.org/protonmail-bridge.git
+[submodule "builds/yakyak"]
+	path = builds/yakyak
+	url = https://aur.archlinux.org/yakyak.git
