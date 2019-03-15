@@ -3,7 +3,7 @@ URxvt*termName: rxvt-256color
 URxvt*font: xft:hack:size=12, \
             -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1, \
             xft:unifont:pixelsize=10
-URxvt.perl-ext-common: default,tabbedex,clipboard
+URxvt.perl-ext-common: default,clipboard
 URxvt.scrollBar: false
 
 URxvt.underlineURLs: True

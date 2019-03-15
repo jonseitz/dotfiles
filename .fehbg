@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-tile '/usr/share/backgrounds/what-the-hex-dark.png' 
