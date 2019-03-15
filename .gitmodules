@@ -196,6 +196,6 @@
 [submodule "builds/gtk-theme-shades-of-gray"]
 	path = builds/gtk-theme-shades-of-gray
 	url = https://aur.archlinux.org/gtk-theme-shades-of-gray.git
-[submodule "builds/ungoogled-chromium"]
-	path = builds/ungoogled-chromium
-	url = https://aur.archlinux.org/ungoogled-chromium.git
+[submodule "builds/protonmail-bridge"]
+	path = builds/protonmail-bridge
+	url = https://aur.archlinux.org/protonmail-bridge.git
