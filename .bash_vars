@@ -1,4 +1,4 @@
-BROWSER=/usr/bin/firefox
-EDITOR=/usr/bin/nvim
-GIT_EDITOR=$EDITOR
-TERMINAL=/usr/bin/urxvt
+export BROWSER=/usr/bin/firefox
+export EDITOR=/usr/bin/nvim
+export GIT_EDITOR=$EDITOR
+export TERMINAL=/usr/bin/alacritty
