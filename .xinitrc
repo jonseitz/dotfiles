@@ -5,6 +5,9 @@ usermodmap=$HOME/.Xmodmap
 userprofile=$HOME/.xprofile
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
+i3_base=$HOME/.config/i3/config.base
+i3_local=$HOME/.config/i3/config.local
+i3_master=$HOME/.config/i3/config
 
 
 # merge in defaults and keymaps
@@ -37,5 +40,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
- 
-exec i3
+
+if [ -f "$i3_base" ] ; then
+  cat "$i3_base" > "$i3_master"
+  if [ -f "$i3_local" ] ; then
+      cat "$i3_local" >> "$i3_master"
+  fi
+fi
+
+exec /usr/bin/i3
