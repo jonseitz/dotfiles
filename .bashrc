@@ -58,6 +58,10 @@ if [ -f ~/.bash_vars ]; then
 . ~/.bash_vars
 fi
 
+if [ -f ~/.bash_private ]; then
+. ~/.bash_private
+fi
+
 if [ -f ~/.resticrc ]; then
 . ~/.resticrc
 fi

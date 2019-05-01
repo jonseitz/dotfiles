@@ -202,3 +202,6 @@
 [submodule "builds/yakyak"]
 	path = builds/yakyak
 	url = https://aur.archlinux.org/yakyak.git
+[submodule "builds/joplin"]
+	path = builds/joplin
+	url = https://aur.archlinux.org/joplin.git
