@@ -185,6 +185,10 @@ let g:NERDTrimTrailingWhiteSpace = 1
 let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
 let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
+let g:airline_powerline_fonts = 1 
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
+let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+
 let g:javascript_plugin_jsdoc = 1
 
 map <C-_> <Plug>NERDCommenterToggle
