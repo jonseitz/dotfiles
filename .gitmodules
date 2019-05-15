@@ -205,3 +205,9 @@
 [submodule "builds/joplin"]
 	path = builds/joplin
 	url = https://aur.archlinux.org/joplin.git
+[submodule ".config/nvim/bundle/vim-devicons"]
+	path = .config/nvim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
+[submodule "builds/nerd-fonts-complete"]
+	path = builds/nerd-fonts-complete
+	url = https://aur.archlinux.org/nerd-fonts-complete.git
