@@ -161,6 +161,8 @@ bar {
 }
 
 input "1739:30382:DLL0704:01_06CB:76AE_Touchpad" { 
+  click_method clickfinger
+  middle_emulation enabled
   natural_scroll enabled
 }
 
