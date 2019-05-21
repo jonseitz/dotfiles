@@ -4,15 +4,15 @@
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
     "modules-right": [
-      "pulseaudio",
       "backlight",
+      "pulseaudio",
       "memory",
       "cpu",
       "temperature",
-      "battery",
       "network",
-      "idle_inhibitor",
-      "clock",
+      "clock#date",
+      "clock#time",
+      "battery",
       "tray"
     ],
     "sway/workspaces": {
@@ -34,8 +34,11 @@
     "tray": {
         "spacing": 10
     },
-    "clock": {
-        "format": "{:%Y-%m-%d %H:%M}"
+    "clock#date": {
+      "format": "{:%Y-%m-%d}  "
+    },
+    "clock#time": {
+        "format": "{:%H:%M}  "
     },
     "cpu": {
         "format": "{usage}% ",
@@ -75,15 +78,15 @@
         "scroll-step": 1,
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "muted ",
+        "format-muted": "muted ﱝ",
         "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", ""]
+            "default": ["奔", "墳"]
         },
         "on-click": "pulsemixer --toggle-mute",
         "on-click-right": "pavucontrol"

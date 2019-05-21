@@ -11,7 +11,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Noto Sans, Helvetica, Arial, sans-serif;
     font-size: 13px;
     min-height: 0;
 }
@@ -52,23 +52,21 @@ window#waybar.hidden {
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
-    padding: 0 10px;
-    margin: 0 5px;
+    padding: 0 8px;
     color: @white;
     background: @gray;
+    border-bottom: 3px solid transparent;
 }
 
-#clock {
-    background-color: @gray;
-}
-
-#battery {
-    border-bottom: 3px solid @white;
+#clock,
+#battery,
+#network,
+#idle_inhibitor {
+  border-bottom-color: @white;
 }
 
 #battery.charging {
-    color: @black;
-    background-color: @green;
+    color: @blue;
 }
 
 @keyframes blink {
@@ -79,8 +77,7 @@ window#waybar.hidden {
 }
 
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @black;
+    color: @red;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -92,54 +89,37 @@ label:focus {
     background-color: @black;
 }
 
-#cpu {
-    border-bottom: 3px solid @green;
+#cpu,
+#memory,
+#temperature {
+    border-bottom-color: @green;
 }
 
-#memory {
-    border-bottom: 3px solid @magenta;
-}
-
-#backlight {
-    border-bottom: 3px solid @cyan;
-}
-
-#network {
-    border-bottom: 3px solid @blue;
-}
-
-#network.disconnected {
-    background: @cyan;
-}
-
+#backlight,
 #pulseaudio {
-    border-bottom: 3px solid @yellow;
+    border-bottom-color: @yellow;
+}
+
+#pulseaudio,
+#temperature,
+#battery {
+  margin-right: 15px;
 }
 
 #pulseaudio.muted {
-    background: @white;
-    color: @gray;
-}
-
-#temperature {
-  border-bottom: 3px solid @red;
+    color: @black;
 }
 
 #temperature.critical {
-    background: @red;
+    color: @red;
 }
 
 #tray {
     background-color: @black;
-    border-bottom: 3px solid @gray;
-}
-
-#idle_inhibitor {
-    background-color: @gray;
+    border-bottom-color: @gray;
 }
 
 #idle_inhibitor.activated {
     background-color: @white;
     color: @gray;
 }
-
