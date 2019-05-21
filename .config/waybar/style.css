@@ -1,0 +1,125 @@
+@define-color black #151718;
+@define-color red #cd3f45;
+@define-color green #9fca56;
+@define-color yellow #e6cd69;
+@define-color blue #55b5db;
+@define-color magenta #a074c4;
+@define-color cyan #55dbbe;
+@define-color white #d6d6d6;
+@define-color gray #41535b;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Noto Sans, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @black; 
+    border-bottom: 3px solid @gray; 
+    color: @white; 
+    transition-property: background, background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @white; 
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: @blue;
+    color: @gray;
+    border-bottom: 3px solid @white;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#mode {
+    background: @blue;
+    border-bottom: 3px solid @white;
+}
+
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+    padding: 0 8px;
+    color: @white;
+    background: @gray;
+    border-bottom: 3px solid transparent;
+}
+
+#clock,
+#battery,
+#network,
+#idle_inhibitor {
+  border-bottom-color: @white;
+}
+
+#battery.charging {
+    color: @blue;
+}
+
+@keyframes blink {
+    to {
+        background-color: @white;
+        color: @black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: @black;
+}
+
+#cpu,
+#memory,
+#temperature {
+    border-bottom-color: @green;
+}
+
+#backlight,
+#pulseaudio {
+    border-bottom-color: @yellow;
+}
+
+#pulseaudio,
+#temperature,
+#battery {
+  margin-right: 15px;
+}
+
+#pulseaudio.muted {
+    color: @black;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#tray {
+    background-color: @black;
+    border-bottom-color: @gray;
+}
+
+#idle_inhibitor.activated {
+    background-color: @white;
+    color: @gray;
+}

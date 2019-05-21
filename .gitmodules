@@ -211,3 +211,6 @@
 [submodule "builds/nerd-fonts-complete"]
 	path = builds/nerd-fonts-complete
 	url = https://aur.archlinux.org/nerd-fonts-complete.git
+[submodule ".config/nvim/bundle/i3config.vim"]
+	path = .config/nvim/bundle/i3config.vim
+	url = git@github.com:mboughaba/i3config.vim.git
