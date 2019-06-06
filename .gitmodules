@@ -214,3 +214,6 @@
 [submodule ".config/nvim/bundle/i3config.vim"]
 	path = .config/nvim/bundle/i3config.vim
 	url = git@github.com:mboughaba/i3config.vim.git
+[submodule "builds/networkmanager-dmenu-git"]
+	path = builds/networkmanager-dmenu-git
+	url = https://aur.archlinux.org/networkmanager-dmenu-git.git
