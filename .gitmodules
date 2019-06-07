@@ -13,9 +13,6 @@
 [submodule ".config/nvim/bundle/vim-javascript"]
 	path = .config/nvim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-[submodule ".config/nvim/bundle/vim-autoformat"]
-	path = .config/nvim/bundle/vim-autoformat
-	url = https://github.com/Chiel92/vim-autoformat.git
 [submodule "builds/bash-pipes"]
 	path = builds/bash-pipes
 	url = https://aur.archlinux.org/bash-pipes.git
@@ -156,7 +153,7 @@
 	url = https://github.com/0xdec/base16-rofi.git
 [submodule ".config/nvim/bundle/yats.vim"]
 	path = .config/nvim/bundle/yats.vim
-	url = https://github.com/HerringtonDarkholme/yats.vim.git
+	url = git@github.com:HerringtonDarkholme/yats.vim.git
 [submodule ".config/nvim/bundle/denite.nvim"]
 	path = .config/nvim/bundle/denite.nvim
 	url = https://github.com/Shougo/denite.nvim
