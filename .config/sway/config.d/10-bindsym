@@ -19,7 +19,7 @@ set $DISPLAY $HOME/.config/sway/displays
 bindsym mod1+Control+1 exec $DISPLAY/mobile.sh
 
 # Activate only monitors at work
-bindsym mod1+Control+2 exec $DISPLAY/docked.sh
+bindsym mod1+Control+2 exec $DISPLAY/work.sh
 
 # Activate monitors at home with laptop
-bindsym mod1+Control+3 exec $DISPLAY/wfh.sh
+bindsym mod1+Control+3 exec $DISPLAY/home.sh
