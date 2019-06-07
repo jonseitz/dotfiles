@@ -1,0 +1,25 @@
+# start a terminal
+bindsym $mod+Return exec alacritty 
+
+# Open Rofi launcher
+bindsym Mod1+space exec rofi -show drun
+
+# Open Rofi Window Menu
+bindsym Mod1+Tab exec rofi -show window
+
+# Open Rofi Network Menu
+bindsym Mod1+grave exec networkmanager_dmenu
+
+# Take screenshots of a specific area
+bindsym $mod+Shift+S exec grim -g "$(slurp)" $HOME/Pictures/screenshots/$(date +%Y-%m-%d_%H%M%S).png
+
+set $DISPLAY $HOME/.config/sway/displays
+
+# Activate only laptop display
+bindsym mod1+Control+1 exec $DISPLAY/mobile.sh
+
+# Activate only monitors at work
+bindsym mod1+Control+2 exec $DISPLAY/docked.sh
+
+# Activate monitors at home with laptop
+bindsym mod1+Control+3 exec $DISPLAY/wfh.sh

@@ -1,9 +1,9 @@
 # Sway config File 
 
-set $mod Mod4
-set $left h
-set $down j
-set $up k
+set $mod   Mod4
+set $left  h
+set $down  j
+set $up    k
 set $right l
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -16,16 +16,15 @@ gaps inner 20
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
 # kill focused window
 bindsym $mod+Shift+q kill
+#
+# reload the configuration file
+bindsym $mod+Shift+c reload
 
-# start dmenu (a program launcher)
+# exit sway
+bindsym $mod+Shift+e exec "swaynag --edge top --message 'Are you sure you want to exit?' --button 'yes' 'swaymsg exit' --dismiss-button 'no'"  
 
-bindsym Mod1+space exec "rofi -show drun"
-bindsym Mod1+Tab exec "rofi -show window"
 
 # change focus
 bindsym $mod+$left focus left
@@ -111,20 +110,14 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "swaynag --edge top --message 'Are you sure you want to exit?' --button 'yes' 'swaymsg exit' --dismiss-button 'no'"  
-
-bindsym Mod1+Control+L exec "swaylock --ignore-empty-password --color=1f2022" 
-
 # window borders
 
 default_border pixel 2
 default_floating_border normal
 
+
 # resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -149,11 +142,6 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
-
-bindsym mod1+Control+2 exec_always $HOME/.config/sway/docked.sh
-bindsym mod1+Control+1 exec_always $HOME/.config/sway/mobile.sh
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -163,18 +151,8 @@ bar {
        swaybar_command waybar
 }
 
-input "1739:30382:DLL0704:01_06CB:76AE_Touchpad" { 
-  click_method clickfinger
-  middle_emulation enabled
-  natural_scroll enabled
-}
-
 # Set the background on all outputs
 output "*" background /usr/share/backgrounds/what-the-hex-dark.png tile
 
-#Take screenshots of a specific area
-bindsym $mod+Shift+S exec grim -g "$(slurp)" $HOME/Pictures/screenshots/$(date +%Y-%m-%d_%H%M%S).png
-
-#start programs on launch
-exec --no-startup-id /usr/bin/nm-applet --indicator
-exec --no-startup-id /usr/bin/protonmail-bridge
+# Import drop-ins
+include $HOME/.config/sway/config.d/*
