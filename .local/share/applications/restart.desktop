@@ -2,4 +2,3 @@
 Type=Application
 Name=Reboot
 Exec=systemctl reboot
-Terminal=true

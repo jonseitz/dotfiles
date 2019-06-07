@@ -1,5 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Sleep
-Exec=systemctl suspend 
-Terminal=true
+Exec=/usr/bin/systemctl sleep
