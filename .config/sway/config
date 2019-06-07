@@ -1,16 +1,8 @@
 # Sway config File 
-<<<<<<< HEAD
-
 set $mod   Mod4
 set $left  h
 set $down  j
 set $up    k
-=======
-set $mod Mod4
-set $left h
-set $down j
-set $up k
->>>>>>> 5a1f45282883d21e0c1b12b7eab07c885a43c077
 set $right l
 
 # Font for window titles. Will also be used by the bar unless a different font
