@@ -12,6 +12,6 @@ input "type:touchpad" {
 
 input "type:keyboard" {
   #make caps lock serve as a control key
-  xkb_options "caps:ctrl_modifier"
+  xkb_options ctrl:nocaps
 }
 
