@@ -1,6 +1,35 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["rust", "javascript", "typescript"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "rust",
+    "typescript",
+    "javascript",
+    "javascript.jsx",
+    "typescript.tsx",
+    "typescript.jsx",
+    "javascriptreact"
+  ],
+  "css.enable": true,
+  "css.validate": true,
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.trace.server": "verbose",
   "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "typescript",
+    "javascript",
+    "javascript.jsx",
+    "typescript.tsx",
+    "typescript.jsx",
+    "javascriptreact"
+  ],
   "javascript.suggest.paths": true,
-  "json.format.enable": true
+  "javascript.validate.enable": false,
+  "json.format.enable": true,
+  "prettier.formatterPriority": -1,
+  "tsserver.log": "terse",
+  "tsserver.trace.server": "verbose",
+  "typescript.updateImportsOnFileMove.enable": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
+
