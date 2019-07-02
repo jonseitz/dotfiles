@@ -130,9 +130,6 @@
 [submodule "builds/ttf-unifont"]
 	path = builds/ttf-unifont
 	url = https://aur.archlinux.org/ttf-unifont.git
-[submodule "builds/urxvt-tabbedex-mina86-git"]
-	path = builds/urxvt-tabbedex-mina86-git
-	url = https://aur.archlinux.org/urxvt-tabbedex-mina86-git.git
 [submodule "builds/virtualbox-ext-oracle"]
 	path = builds/virtualbox-ext-oracle
 	url = https://aur.archlinux.org/virtualbox-ext-oracle.git
