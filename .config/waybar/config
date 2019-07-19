@@ -12,6 +12,7 @@
       "network",
       "clock#date",
       "clock#time",
+      "idle_inhibitor",
       "battery",
       "tray"
     ],
@@ -72,7 +73,15 @@
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-disconnected": "Disconnected ⚠"
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "/usr/bin/networkmanager_dmenu"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
     },
     "pulseaudio": {
         "scroll-step": 1,
