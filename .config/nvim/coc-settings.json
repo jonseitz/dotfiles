@@ -2,6 +2,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "rust",
+    "json",
     "typescript",
     "javascript",
     "javascript.jsx",
@@ -32,4 +33,3 @@
   "typescript.updateImportsOnFileMove.enable": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
-

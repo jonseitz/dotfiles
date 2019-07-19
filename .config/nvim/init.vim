@@ -188,6 +188,7 @@ let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
 let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
 
 let g:javascript_plugin_jsdoc = 1
+let g:typescript_indent_disable = 0
 
 map <C-_> <Plug>NERDCommenterToggle
 
