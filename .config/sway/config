@@ -50,7 +50,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split b
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -84,6 +84,8 @@ set $ws10 "10"
 
 bindsym Mod1+Control+Left workspace prev
 bindsym Mod1+Control+Right workspace next
+bindsym $mod+Control+$left workspace prev
+bindsym $mod+Control+$right workspace next
 
 
 # switch to workspace
