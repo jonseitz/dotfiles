@@ -23,3 +23,6 @@ bindsym mod1+Control+2 exec $DISPLAY/work.sh
 
 # Activate monitors at home with laptop
 bindsym mod1+Control+3 exec $DISPLAY/home.sh
+
+# Activate HDMI output
+bindsym mod1+Control+4 exec $DISPLAY/hdmi.sh
