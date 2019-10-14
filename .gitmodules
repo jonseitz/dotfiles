@@ -199,6 +199,18 @@
 [submodule ".config/nvim/bundle/i3config.vim"]
 	path = .config/nvim/bundle/i3config.vim
 	url = git@github.com:mboughaba/i3config.vim.git
-[submodule "builds/networkmanager-dmenu-git"]
-	path = builds/networkmanager-dmenu-git
-	url = https://aur.archlinux.org/networkmanager-dmenu-git.git
+[submodule "builds/nvm"]
+	path = builds/nvm
+	url = https://aur.archlinux.org/nvm.git
+[submodule "builds/zoom"]
+	path = builds/zoom
+	url = https://aur.archlinux.org/zoom.git
+[submodule "builds/bitwarden-bin"]
+	path = builds/bitwarden-bin
+	url = https://aur.archlinux.org/bitwarden-bin.git
+[submodule "builds/bitwarden-cli"]
+	path = builds/bitwarden-cli
+	url = https://aur.archlinux.org/bitwarden-cli.git
+[submodule "builds/bitwarden-rofi"]
+	path = builds/bitwarden-rofi
+	url = https://aur.archlinux.org/bitwarden-rofi.git
