@@ -34,9 +34,6 @@
 [submodule "builds/hplip-plugin"]
 	path = builds/hplip-plugin
 	url = https://aur.archlinux.org/hplip-plugin.git
-[submodule "builds/kindlegen"]
-	path = builds/kindlegen
-	url = https://aur.archlinux.org/kindlegen.git
 [submodule "builds/kubectl-bin"]
 	path = builds/kubectl-bin
 	url = https://aur.archlinux.org/kubectl-bin.git
@@ -97,9 +94,6 @@
 [submodule "builds/spotify"]
 	path = builds/spotify
 	url = https://aur.archlinux.org/spotify.git
-[submodule "builds/sublime-text-dev"]
-	path = builds/sublime-text-dev
-	url = https://aur.archlinux.org/sublime-text-dev.git
 [submodule "builds/timg"]
 	path = builds/timg
 	url = https://aur.archlinux.org/timg.git
@@ -193,9 +187,6 @@
 [submodule "builds/protonmail-bridge"]
 	path = builds/protonmail-bridge
 	url = https://aur.archlinux.org/protonmail-bridge.git
-[submodule "builds/yakyak"]
-	path = builds/yakyak
-	url = https://aur.archlinux.org/yakyak.git
 [submodule "builds/joplin"]
 	path = builds/joplin
 	url = https://aur.archlinux.org/joplin.git
