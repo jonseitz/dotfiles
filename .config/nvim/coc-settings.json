@@ -12,6 +12,7 @@
   ],
   "css.enable": true,
   "css.validate": true,
+  "eslint.autoFix": true,
   "eslint.enable": true,
   "eslint.run": "onType",
   "eslint.trace.server": "verbose",
