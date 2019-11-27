@@ -5,4 +5,3 @@ Description=Run restic backup to backblaze b2
 [Service]
 Type=simple
 ExecStart=/usr/bin/restic backup %h --exclude-file %h/.resticignore
-
