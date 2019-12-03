@@ -167,6 +167,25 @@ if has('langmap') && exists('+langremap')
   set nolangremap
 endif
 
+
+" Disable Arrow Keys for fun
+nnoremap <Up> <Nop>
+vnoremap <Up> <Nop>
+inoremap <Up> <Nop>
+tnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+vnoremap <Down> <Nop>
+inoremap <Down> <Nop>
+tnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+vnoremap <Left> <Nop>
+inoremap <Left> <Nop>
+tnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+vnoremap <Right> <Nop>
+inoremap <Right> <Nop>
+tnoremap <Right> <Nop>
+
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Esc> :noh<Enter><Esc>
 
@@ -193,3 +212,19 @@ let g:typescript_indent_disable = 0
 map <C-_> <Plug>NERDCommenterToggle
 
 set runtimepath^=/usr/share/vim/vimfiles
+
+" COC completion on tab
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
