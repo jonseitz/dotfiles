@@ -7,8 +7,11 @@ bindsym Mod1+space exec rofi -show drun
 # Open Rofi Window Menu
 bindsym Mod1+Tab exec rofi -show window
 
-# Open Rofi Network Menu
-bindsym Mod1+grave exec networkmanager_dmenu
+# cycle through scatchpad
+bindsym Mod1+grave scratchpad show
+
+# send to scratchpad
+bindsym $mod+m move container to scratchpad
 
 # Take screenshots of a specific area
 bindsym $mod+Shift+S exec grim -g "$(slurp)" $HOME/Pictures/screenshots/$(date +%Y-%m-%d_%H%M%S).png
