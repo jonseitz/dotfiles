@@ -1,14 +1,15 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
-    "rust",
     "json",
-    "typescript",
     "javascript",
+    "javascriptreact",
     "javascript.jsx",
+    "python",
+    "rust",
+    "typescript",
     "typescript.tsx",
-    "typescript.jsx",
-    "javascriptreact"
+    "typescript.jsx"
   ],
   "css.enable": true,
   "css.validate": true,
@@ -22,12 +23,20 @@
     "javascript.jsx",
     "typescript.tsx",
     "typescript.jsx",
-    "javascriptreact"
+    "javascriptreact",
+    "typescriptreact"
   ],
   "javascript.suggest.paths": true,
   "javascript.validate.enable": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "json.format.enable": true,
+  "prettier.requireConfig": true,
+  "prettier.eslintIntegration": true,
   "prettier.formatterPriority": -1,
+  "prettier.disableSuccessMessage": true,
+  "suggest.autoTrigger": "always",
+  "suggest.triggerAfterInsertEnter": true,
+  "tsserver.enableJavascript": true,
   "tsserver.log": "terse",
   "tsserver.trace.server": "verbose",
   "typescript.updateImportsOnFileMove.enable": true,
