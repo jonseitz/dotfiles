@@ -11,7 +11,10 @@ input "type:touchpad" {
 }
 
 input "type:keyboard" {
-  #make caps lock serve as a control key
-  xkb_options ctrl:nocaps
+  # Add custom keyboard rules:
+  # 1. make caps lock an escape key
+  # 2. press both shifts to activate capslock, press one to disable
+  # 3. make the menu key a second win key
+  xkb_options caps:escape,shift:both_capslock_cancel,altwin:menu_win
 }
 
