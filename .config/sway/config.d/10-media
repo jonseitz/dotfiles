@@ -1,0 +1,9 @@
+bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5 
+bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5 
+bindsym XF86AudioMute exec pulsemixer --toggle-mute
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioStop exec playerctl stop 
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86MonBrightnessDown exec light +U 5
+bindsym XF86MonBrightnessUp exec light -A 5
