@@ -167,6 +167,7 @@ if has('langmap') && exists('+langremap')
   set nolangremap
 endif
 
+au BufRead /tmp/mutt-* set tw=72
 
 " Disable Arrow Keys for fun
 nnoremap <Up> <Nop>
