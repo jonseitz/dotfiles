@@ -4,7 +4,8 @@ bindswitch --locked --no-warn lid:on systemctl hibernate
 bindsym Mod1+Control+L exec "swaylock --ignore-empty-password --color=1f2022" 
 
 exec swayidle -w \
-  timeout 300 'swaylock --ignore-empty-password --color=1f2022' \
+  timeout 300 'swaylock -f --ignore-empty-password --color=1f2022' \
   timeout 600 'swaymsg "output * dpms off"' \
-       resume 'swaymsg "output * dpms on"' \
-  before-sleep 'swaylock --ignore-empty-password --color=1f2022'
+  timeout 900 'systemctl suspend' \
+  resume 'swaymsg "output * dpms on"' \
+  before-sleep 'swaylock -f --ignore-empty-password --color=1f2022'
