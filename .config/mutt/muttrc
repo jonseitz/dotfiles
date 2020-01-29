@@ -25,3 +25,6 @@ bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
 
+set query_command= "khard email --parsable %s"
+bind editor <Tab> complete-query
+bind editor ^T    complete
