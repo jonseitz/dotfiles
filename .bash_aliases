@@ -3,4 +3,6 @@ alias ll='exa -la --git --group-directories-first'
 alias lu='du -hd1 | sort -h'
 alias subl='subl3 .'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias vim="nvim"
+alias vim='nvim'
+alias neomutt='env TERM=screen-256color neomutt'
+alias mutt='neomutt'
