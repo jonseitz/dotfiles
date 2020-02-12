@@ -2,19 +2,18 @@ source $HOME/.config/mutt/accounts/muttrc.imap
 source $HOME/.config/mutt/accounts/muttrc.smtp
 set spoolfile = +INBOX
 mailboxes = +INBOX
+set mail_check=60
 set header_cache = ~/.cache/mutt
 set message_cachedir = "~/.cache/mutt"
 set mailcap_path 	= $HOME/.config/mutt/mailcap
 auto_view text/html
+alternative_order text/plain text/html
 
 # Allow Mutt to open a new IMAP connection automatically.
 unset imap_passive
 
 # Keep the IMAP connection alive by polling intermittently (time in seconds).
 set imap_keepalive = 300
-
-# How often to check for new mail (time in seconds).
-set mail_check = 120
 
 bind pager j next-line
 bind pager k previous-line
@@ -24,7 +23,36 @@ bind pager g top
 bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
+bind generic,pager,index,attach <up> noop
+bind generic,pager,index,attach <down> noop
+bind generic,pager,index,attach <left> noop
+bind generic,pager,index,attach <right> noop
 
 set query_command= "khard email --parsable %s"
 bind editor <Tab> complete-query
 bind editor ^T    complete
+
+# -*-muttrc-*-
+
+# Palette for use with the Linux console.  Black background.
+
+color hdrdefault blue black
+color quoted blue black
+color signature blue black
+color attachment red black
+color prompt brightmagenta black
+color message brightgreen black
+color error brightred black
+color indicator black blue 
+color status brightgreen lightblack 
+color tree white black
+color normal white black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index brightwhite black "~N|~O"
+color index lightblack black "~D"
+
+# color body brightwhite black '\*+[^*]+\*+'
+# color body brightwhite black '_+[^_]+_+'
