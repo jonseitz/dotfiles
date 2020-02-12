@@ -101,7 +101,7 @@ label:focus {
 }
 
 #pulseaudio,
-#temperature,
+#cpu,
 #battery {
   margin-right: 15px;
 }

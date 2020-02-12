@@ -8,7 +8,6 @@
       "pulseaudio",
       "memory",
       "cpu",
-      "temperature",
       "network",
       "clock#date",
       "clock#time",
