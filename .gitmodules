@@ -214,3 +214,6 @@
 [submodule "builds/bitwarden-rofi"]
 	path = builds/bitwarden-rofi
 	url = https://aur.archlinux.org/bitwarden-rofi.git
+[submodule "builds/wofi"]
+	path = builds/wofi
+	url = https://aur.archlinux.org/wofi.git
