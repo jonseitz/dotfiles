@@ -2,10 +2,10 @@
 bindsym $mod+Return exec alacritty 
 
 # Open Rofi launcher
-bindsym Mod1+space exec rofi -show drun
+bindsym Mod1+space exec wofi -ImS drun
 
 # Open Rofi Window Menu
-bindsym Mod1+Tab exec rofi -show window
+#bindsym Mod1+Tab exec rofi -show window
 
 # cycle through scatchpad
 bindsym Mod1+grave scratchpad show
