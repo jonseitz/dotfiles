@@ -3,5 +3,5 @@ Description=Run restic backup to backblaze b2
 ; After=network.target
 
 [Service]
-Type=simple
+Type=oneshot
 ExecStart=/usr/bin/restic backup %h --exclude-file %h/.resticignore
