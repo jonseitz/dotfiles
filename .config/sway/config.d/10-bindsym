@@ -2,7 +2,7 @@
 bindsym $mod+Return exec alacritty 
 
 # Open Rofi launcher
-bindsym Mod1+space exec wofi -ImS drun
+bindsym Mod1+space exec wofi -IimS drun
 
 # Open Rofi Window Menu
 #bindsym Mod1+Tab exec rofi -show window
