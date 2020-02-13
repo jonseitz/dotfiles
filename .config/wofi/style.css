@@ -1,0 +1,60 @@
+/*
+ * color0 - background
+ * color1 - red
+ * color2 - green
+ * color3 - yellow
+ * color4 - blue
+ * color5 - magenta
+ * color6 - cyan
+ * color7 - foreground
+ * color8 - gray
+ * color9 - 
+ * color10 - brightgreen
+ * color11 - 
+ * color12 - 
+ * color13 - 
+ * color14 - 
+ * color15 - 
+ * color16 - white
+ */
+
+
+#outer-box {
+  border: 6px solid --wofi-color8;
+  background-color: --wofi-color0;
+  padding: 10px;
+}
+
+#input,
+#input:active,
+#input:focus {
+  background-color: --wofi-color0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+#input {
+ border-bottom: 2sx solid --wofi-color8;
+}
+
+#input,
+#text,
+#entry{
+  font-size: 18px;
+  font-family: "Hack Nerd Font";
+}
+
+#entry {
+  display: block;
+  width: 100%;
+}
+
+flowboxchild {
+  padding: 8px 0px;
+  border-collapse: collapse;
+  border-bottom: 1px dashed --wofi-color8;
+}
+flowboxchild:nth-child(1) {
+  border-top: 1px dashed --wofi-color8;
+}
