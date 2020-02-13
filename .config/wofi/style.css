@@ -20,29 +20,26 @@
 
 
 #outer-box {
-  border: 6px solid --wofi-color8;
+  border: 2px solid --wofi-color7;
   background-color: --wofi-color0;
-  padding: 10px;
+  padding: 6px;
 }
 
 #input,
 #input:active,
-#input:focus {
+#input:focus,
+#input:selected {
   background-color: --wofi-color0;
   border-radius: 0;
-  border: none;
-  outline: none;
-}
-
-#input {
- border-bottom: 2sx solid --wofi-color8;
+  border-bottom: 2px dashed --wofi-color7;
 }
 
 #input,
 #text,
 #entry{
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Hack Nerd Font";
+  color: --wofi-color7;
 }
 
 #entry {
@@ -51,10 +48,19 @@
 }
 
 flowboxchild {
-  padding: 8px 0px;
+  padding: 1px;
   border-collapse: collapse;
-  border-bottom: 1px dashed --wofi-color8;
 }
-flowboxchild:nth-child(1) {
-  border-top: 1px dashed --wofi-color8;
+
+flowboxchild:nth-child(even) {
+  background: --wofi-color0;
+}
+
+flowboxchild:nth-child(odd) {
+  background: --wofi-color8;
+}
+
+#entry:selected {
+  background: --wofi-color7;
+  color: --wofi-color0;
 }
