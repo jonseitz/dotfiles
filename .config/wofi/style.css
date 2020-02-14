@@ -7,12 +7,12 @@
  * color5 - magenta
  * color6 - cyan
  * color7 - foreground
- * color8 - gray
- * color9 - 
+ * color8 - brightblack
+ * color9 - brightred
  * color10 - brightgreen
- * color11 - 
- * color12 - 
- * color13 - 
+ * color11 - brightyellow
+ * color12 - brightblue
+ * color13 - brightmagenta
  * color14 - 
  * color15 - 
  * color16 - white
@@ -27,12 +27,14 @@
 
 #input,
 #input:active,
-#input:focus,
-#input:selected {
-  background-color: --wofi-color0;
+#input:focus {
+  background-color: black;
   border-radius: 0;
   border-bottom: 2px dashed --wofi-color7;
+  margin-bottom: 2px;
+  outline: none
 }
+
 
 #input,
 #text,
@@ -57,10 +59,12 @@ flowboxchild:nth-child(even) {
 }
 
 flowboxchild:nth-child(odd) {
-  background: --wofi-color8;
+  background: black;
 }
 
-#entry:selected {
-  background: --wofi-color7;
+flowboxchild:selected,
+flowboxchild:selected #text {
+  background-color: --wofi-color7;
   color: --wofi-color0;
 }
+
