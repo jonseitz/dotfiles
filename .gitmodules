@@ -211,3 +211,15 @@
 [submodule "builds/wofi"]
 	path = builds/wofi
 	url = https://aur.archlinux.org/wofi.git
+[submodule "builds/spotify-tui"]
+	path = builds/spotify-tui
+	url = https://aur.archlinux.org/spotify-tui.git
+[submodule "builds/rem2ics"]
+	path = builds/rem2ics
+	url = https://aur.archlinux.org/rem2ics.git
+[submodule "builds/mail2rem-git"]
+	path = builds/mail2rem-git
+	url = https://aur.archlinux.org/mail2rem-git.git
+[submodule "builds/ical2rem"]
+	path = builds/ical2rem
+	url = https://aur.archlinux.org/ical2rem.git
