@@ -13,9 +13,6 @@
 [submodule ".config/nvim/bundle/vim-javascript"]
 	path = .config/nvim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-[submodule "builds/bash-pipes"]
-	path = builds/bash-pipes
-	url = https://aur.archlinux.org/bash-pipes.git
 [submodule "builds/digikam-git"]
 	path = builds/digikam-git
 	url = https://aur.archlinux.org/digikam-git.git
@@ -160,9 +157,6 @@
 [submodule ".config/nvim/bundle/vim-jsdoc"]
 	path = .config/nvim/bundle/vim-jsdoc
 	url = https://github.com/heavenshell/vim-jsdoc
-[submodule "builds/signal-desktop-bin"]
-	path = builds/signal-desktop-bin
-	url = https://aur.archlinux.org/signal-desktop-bin.git
 [submodule "builds/nlohmann-json"]
 	path = builds/nlohmann-json
 	url = https://aur.archlinux.org/nlohmann-json.git
