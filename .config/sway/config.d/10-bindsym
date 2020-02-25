@@ -2,13 +2,10 @@
 bindsym $mod+Return exec alacritty 
 
 # Open Rofi launcher
-bindsym Mod1+space exec wofi -IimS drun
-
-# Open Rofi Window Menu
-#bindsym Mod1+Tab exec rofi -show window
+bindsym Mod1+space exec wofi --conf $HOME/.config/wofi/config
 
 # cycle through scatchpad
-bindsym Mod1+grave scratchpad show
+bindsym Mod1+Tab scratchpad show
 
 # send to scratchpad
 bindsym $mod+m move container to scratchpad
