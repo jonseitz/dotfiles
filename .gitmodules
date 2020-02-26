@@ -223,3 +223,6 @@
 [submodule "builds/ical2rem"]
 	path = builds/ical2rem
 	url = https://aur.archlinux.org/ical2rem.git
+[submodule "builds/ripmime"]
+	path = builds/ripmime
+	url = https://aur.archlinux.org/ripmime.git
