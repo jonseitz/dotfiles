@@ -1,5 +1,4 @@
 #!/bin/bash
-swaymsg output "*" disable
 swaymsg output eDP-1 enable 
 swaymsg output eDP-1 pos 0 0 res 1920x1080 scale 1
 swaymsg output "'Dell Inc. DELL U2717D 67YGV74R780L'" enable
