@@ -2,4 +2,3 @@ export BROWSER=/usr/bin/firefox-developer-edition
 export EDITOR=/usr/bin/nvim
 export GIT_EDITOR=$EDITOR
 export TERMINAL=/usr/bin/alacritty
-export GOETHE=209.6.241.161
