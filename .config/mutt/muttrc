@@ -5,8 +5,8 @@ set mail_check=60
 set header_cache = ~/.cache/mutt
 set message_cachedir = "~/.cache/mutt"
 set mailcap_path 	= $HOME/.config/mutt/mailcap
-auto_view text/html
-alternative_order text/plain text/html
+auto_view text/html text/calendar application/ics
+alternative_order text/calendar text/plain text/html
 
 set sidebar_visible
 
@@ -31,7 +31,7 @@ bind generic,pager,index,attach <down> noop
 bind generic,pager,index,attach <left> noop
 bind generic,pager,index,attach <right> noop
 
-macro index a ":set confirmappend=no delete=yes\n<tag-prefix><save-message>=archive\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+macro index,pager a '<enter-command>set confirmappend=no delete=yes<enter><tag-prefix><save-message>=?archive<enter><sync-mailbox><enter-command>set confirmappend=yes delete=ask-yes<enter>'
 
 # Move the highlight to the previous mailbox
 bind index,pager \Cp sidebar-prev
@@ -57,6 +57,7 @@ bind index,pager B sidebar-toggle-visible
 set mail_check_stats
 # Display the Sidebar mailboxes using this format string.
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_new_mail_only = yes
 
 set query_command= "khard email --parsable %s"
 bind editor <Tab> complete-query

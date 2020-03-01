@@ -1,0 +1,72 @@
+#!/usr/bin/env python
+import icalendar
+import re
+import sys
+
+def print_cal(input_file, output_file):
+    details = icalendar.Calendar.from_ical(input_file.read())
+    for component in details.walk():
+        if component.name != "VEVENT":
+            continue
+
+        summary     = component.get("summary")
+        start       = component.get("dtstart").dt
+        end         = component.get("dtend").dt
+        uid         = component.get("uid")
+        location    = component.get("location")
+        description = component.get("description")
+        attendees   = component.get("attendee")
+
+        print(
+            f"{summary}",
+            "========================================================================",
+            "",
+            "Time:",
+            sep="\n", file=output_file
+        )
+
+        if (start.year == end.year and start.month == end.month and start.day == end.day):
+            print(
+                f"\t{start.year}-{start.month}-{start.day}:\t{start.hour:02d}:{start.minute:02d} - {end.hour:02d}:{end.minute:02d}",
+                sep="\n", file=output_file
+            )
+        else: 
+            print(
+                f"\t{start.year}-{start.month}-{start.day} {start.hour:02d}:{start.minute:02d} - {end.year}-{end.month}-{end.day} {end.hour:02d}:{end.minute:02d}",
+                sep="\n", file=output_file
+            )
+
+        print(
+            "",
+            "Location:",
+            f"\t{location}",
+            sep="\n", file=output_file
+        )
+
+        if (len(attendees) > 0):
+            print(
+                "",
+                "Attendees:",
+                *(f"\t{a}" for a in (attendees or [])),
+                "",
+                sep="\n", file=output_file
+            )
+
+        print(
+            "------------------------------------------------------------------------",
+            re.sub('\n', '\n\t', f"\t{description}"),
+            "------------------------------------------------------------------------",
+            sep="\n\n", file=output_file
+        )
+
+        #  print(
+            #  f"\t/* {uid} */",
+            #  sep="\n", file=output_file
+        #  )
+
+if len(sys.argv) > 1:
+    with open(sys.argv[1], "rt", encoding="UTF-8") as f:
+        print_cal(f, sys.stdout)
+else:
+    print_cal(sys.stdin, sys.stdout)
+
