@@ -1,6 +1,3 @@
-source $HOME/.config/mutt/accounts/muttrc.imap
-source $HOME/.config/mutt/accounts/muttrc.smtp
-
 set mail_check=60
 set header_cache = ~/.cache/mutt
 set message_cachedir = "~/.cache/mutt"
@@ -30,8 +27,6 @@ bind generic,pager,index,attach <up> noop
 bind generic,pager,index,attach <down> noop
 bind generic,pager,index,attach <left> noop
 bind generic,pager,index,attach <right> noop
-
-macro index,pager a '<enter-command>set confirmappend=no delete=yes<enter><tag-prefix><save-message>=?archive<enter><sync-mailbox><enter-command>set confirmappend=yes delete=ask-yes<enter>'
 
 # Move the highlight to the previous mailbox
 bind index,pager \Cp sidebar-prev
@@ -87,3 +82,5 @@ color index lightblack black "~D"
 
 # color body brightwhite black '\*+[^*]+\*+'
 # color body brightwhite black '_+[^_]+_+'
+source $HOME/.config/mutt/dropin.sh|
+
