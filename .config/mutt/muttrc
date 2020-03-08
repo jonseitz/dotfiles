@@ -13,6 +13,8 @@ unset imap_passive
 # Keep the IMAP connection alive by polling intermittently (time in seconds).
 set imap_keepalive = 300
 
+set auto_tag = yes
+
 set sort=threads
 
 bind pager j next-line
@@ -52,7 +54,7 @@ bind index,pager B sidebar-toggle-visible
 set mail_check_stats
 # Display the Sidebar mailboxes using this format string.
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
-set sidebar_new_mail_only = yes
+# set sidebar_new_mail_only = yes
 
 set query_command= "khard email --parsable %s"
 bind editor <Tab> complete-query

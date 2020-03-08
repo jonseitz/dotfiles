@@ -1,0 +1,16 @@
+set virtual_spoolfile=yes
+set spoolfile = "unread"
+set folder = "~/mail/"
+macro generic,index a "<modify-labels>+archive -unread -inbox<enter>" "Archive message"
+macro generic,index s "<modify-labels>+todo -unread -inbox<enter>" "Mark as TODO"
+macro index c "<change-vfolder>?" "Change to vfolder overview"
+macro index \\\\ "<vfolder-from-query>" "Search mailbox"
+bind index,pager \` modify-labels
+virtual-mailboxes "INBOX" "notmuch://?query=tag:inbox"
+virtual-mailboxes "TODOs" "notmuch://?query=tag:todo"
+virtual-mailboxes "to-me" "notmuch://?query=tag:to-me"
+virtual-mailboxes "unread" "notmuch://?query=tag:unread"
+virtual-mailboxes "archive" "notmuch://?query=tag:archive"
+virtual-mailboxes "sent" "notmuch://?query=tag:sent"
+virtual-mailboxes "All Mail" "notmuch://?query=*"
+
