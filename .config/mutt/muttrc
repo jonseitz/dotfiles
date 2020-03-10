@@ -17,8 +17,11 @@ set auto_tag = yes
 
 set sort=threads
 
+# VIM bindings
 bind pager j next-line
 bind pager k previous-line
+bind pager,index J next-page
+bind pager,index K previous-page
 bind attach,index,pager \CD next-page
 bind attach,index,pager \CU previous-page
 bind pager g top
@@ -59,8 +62,7 @@ set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
 set query_command= "khard email --parsable %s"
 bind editor <Tab> complete-query
 bind editor ^T    complete
-
-# -*-muttrc-*-
+macro index,pager A "<pipe-message>khard add-email<return>" "add the sender email address to khard"
 
 # Palette for use with the Linux console.  Black background.
 
@@ -81,6 +83,7 @@ color tilde brightmagenta black
 color index blue black ~F
 color index brightwhite black "~N|~O"
 color index lightblack black "~D"
+color index lightblack black "~Ydeleted"
 
 # color body brightwhite black '\*+[^*]+\*+'
 # color body brightwhite black '_+[^_]+_+'

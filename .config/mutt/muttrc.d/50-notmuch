@@ -6,11 +6,12 @@ macro generic,index s "<modify-labels>+todo -unread -inbox<enter>" "Mark as TODO
 macro index c "<change-vfolder>?" "Change to vfolder overview"
 macro index \\\\ "<vfolder-from-query>" "Search mailbox"
 bind index,pager \` modify-labels
-virtual-mailboxes "INBOX" "notmuch://?query=tag:inbox"
-virtual-mailboxes "TODOs" "notmuch://?query=tag:todo"
-virtual-mailboxes "to-me" "notmuch://?query=tag:to-me"
+macro generic,index,pager d "<modify-labels>!deleted<enter>" "toggle deleted"
+set nm_exclude_tags = "deleted"
+
 virtual-mailboxes "unread" "notmuch://?query=tag:unread"
+virtual-mailboxes "INBOX" notmuch://?query=tag:inbox"
+virtual-mailboxes "TODOs" "notmuch://?query=tag:todo"
 virtual-mailboxes "archive" "notmuch://?query=tag:archive"
 virtual-mailboxes "sent" "notmuch://?query=tag:sent"
 virtual-mailboxes "All Mail" "notmuch://?query=*"
-
