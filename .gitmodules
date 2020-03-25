@@ -226,3 +226,6 @@
 [submodule "builds/ripmime"]
 	path = builds/ripmime
 	url = https://aur.archlinux.org/ripmime.git
+[submodule ".config/nvim/bundle/vim-surround"]
+	path = .config/nvim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
