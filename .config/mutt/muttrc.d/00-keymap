@@ -1,0 +1,45 @@
+# GENERAL bindings
+bind generic,pager,index \CR group-reply
+bind index o display-message
+bind index x tag-entry
+bind index * tag-pattern
+macro index \CT "<untag-pattern>.*<return>" "Clear all tags" 
+macro attach c "<pipe-message>khal import --batch<return>" "Sent attachment to khal"
+
+# VIM bindings
+bind pager j next-line
+bind pager k previous-line
+bind pager,index J next-page
+bind pager,index K previous-page
+bind attach,index,pager \CD next-page
+bind attach,index,pager \CU previous-page
+bind pager g top
+bind pager G bottom
+bind attach,index g first-entry
+bind attach,index G last-entry
+bind generic,pager,index,attach <up> noop
+bind generic,pager,index,attach <down> noop
+bind generic,pager,index,attach <left> noop
+bind generic,pager,index,attach <right> noop
+
+# SIDEBAR bindings
+bind index,pager \Cp sidebar-prev
+bind index,pager \Cn sidebar-next
+bind index,pager \Co sidebar-open
+bind index,pager B sidebar-toggle-visible
+
+
+# KHARD bindings
+bind editor <Tab> complete-query
+bind editor ^T    complete
+macro index,pager A "<pipe-message>khard add-email<return>" "add the sender email address to khard"
+
+
+# NOTMUCH bindings
+macro generic,index a "<modify-labels>+archive -unread -inbox<enter>" "Archive message"
+macro generic,index,pager t "<modify-labels>+todo -unread -inbox<enter>" "Mark as TODO"
+macro index c "<change-vfolder>?" "Change to vfolder overview"
+macro index \\\\ "<vfolder-from-query>" "Search mailbox"
+bind index,pager \` modify-labels
+macro generic,index,pager d "<modify-labels>+deleted -unread -inbox<enter>" "mark as deleted"
+macro generic,index,pager u "<modify-labels>-deleted +inbox<enter>" "mark as undeleted"

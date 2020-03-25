@@ -1,91 +1,22 @@
-set mail_check=60
+# Allow Mutt to open a new IMAP connection automatically.
+unset imap_passive
+# Keep the IMAP connection alive by polling intermittently (time in seconds).
+set imap_keepalive = 300
+set mail_check = 60
 set header_cache = ~/.cache/mutt
 set message_cachedir = "~/.cache/mutt"
 set mailcap_path 	= $HOME/.config/mutt/mailcap
 auto_view text/html text/calendar application/ics
 alternative_order text/calendar text/plain text/html
-
 set sidebar_visible
-
-# Allow Mutt to open a new IMAP connection automatically.
-unset imap_passive
-
-# Keep the IMAP connection alive by polling intermittently (time in seconds).
-set imap_keepalive = 300
-
-set auto_tag = yes
-
-set sort=threads
-
-# VIM bindings
-bind pager j next-line
-bind pager k previous-line
-bind pager,index J next-page
-bind pager,index K previous-page
-bind attach,index,pager \CD next-page
-bind attach,index,pager \CU previous-page
-bind pager g top
-bind pager G bottom
-bind attach,index g first-entry
-bind attach,index G last-entry
-bind generic,pager,index,attach <up> noop
-bind generic,pager,index,attach <down> noop
-bind generic,pager,index,attach <left> noop
-bind generic,pager,index,attach <right> noop
-
-# Move the highlight to the previous mailbox
-bind index,pager \Cp sidebar-prev
-# Move the highlight to the next mailbox
-bind index,pager \Cn sidebar-next
-# Open the highlighted mailbox
-bind index,pager \Co sidebar-open
-# Move the highlight to the previous page
-# This is useful if you have a LOT of mailboxes.
-bind index,pager <F3> sidebar-page-up
-# Move the highlight to the next page
-# This is useful if you have a LOT of mailboxes.
-bind index,pager <F4> sidebar-page-down
-# Move the highlight to the previous mailbox containing new, or flagged,
-# mail.
-bind index,pager <F5> sidebar-prev-new
-# Move the highlight to the next mailbox containing new, or flagged, mail.
-bind index,pager <F6> sidebar-next-new
-# Toggle the visibility of the Sidebar.
-bind index,pager B sidebar-toggle-visible
-# Enable extended mailbox mode to calculate total, new, and flagged
-# message counts for each mailbox.
 set mail_check_stats
-# Display the Sidebar mailboxes using this format string.
-set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
-# set sidebar_new_mail_only = yes
+set sidebar_format = '%B%* %?N?%N/?%S'
+set auto_tag = yes
+set sort = threads
+set query_command = "khard email --parsable %s"
+set virtual_spoolfile = yes
+set spoolfile = "unread"
+set folder = "~/mail/"
+set nm_exclude_tags = "deleted"
 
-set query_command= "khard email --parsable %s"
-bind editor <Tab> complete-query
-bind editor ^T    complete
-macro index,pager A "<pipe-message>khard add-email<return>" "add the sender email address to khard"
-
-# Palette for use with the Linux console.  Black background.
-
-color hdrdefault blue black
-color quoted blue black
-color signature blue black
-color attachment red black
-color prompt brightmagenta black
-color message brightgreen black
-color error brightred black
-color indicator black blue 
-color status brightgreen lightblack 
-color tree white black
-color normal white black
-color markers red black
-color search white black
-color tilde brightmagenta black
-color index blue black ~F
-color index brightwhite black "~N|~O"
-color index lightblack black "~D"
-color index lightblack black "~Ydeleted"
-
-# color body brightwhite black '\*+[^*]+\*+'
-# color body brightwhite black '_+[^_]+_+'
 source $HOME/.config/mutt/dropin.sh|
-
