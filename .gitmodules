@@ -178,9 +178,6 @@
 [submodule "builds/gtk-theme-shades-of-gray"]
 	path = builds/gtk-theme-shades-of-gray
 	url = https://aur.archlinux.org/gtk-theme-shades-of-gray.git
-[submodule "builds/protonmail-bridge"]
-	path = builds/protonmail-bridge
-	url = https://aur.archlinux.org/protonmail-bridge.git
 [submodule "builds/joplin"]
 	path = builds/joplin
 	url = https://aur.archlinux.org/joplin.git
@@ -229,3 +226,6 @@
 [submodule ".config/nvim/bundle/vim-surround"]
 	path = .config/nvim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "builds/protonmail-bridge-bin"]
+	path = builds/protonmail-bridge-bin
+	url = https://aur.archlinux.org/protonmail-bridge-bin.git
