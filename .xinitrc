@@ -8,7 +8,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 i3_base=$HOME/.config/i3/config.base
 i3_local=$HOME/.config/i3/config.local
 i3_master=$HOME/.config/i3/config
-
+_JAVA_AWT_WM_NONREPARENTING=1
 
 # merge in defaults and keymaps
 
