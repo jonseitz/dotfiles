@@ -18,5 +18,8 @@ set virtual_spoolfile = yes
 set spoolfile = "unread"
 set folder = "~/mail/"
 set nm_exclude_tags = "deleted"
+set attach_save_dir = "~/Downloads/"
+set forward_format = "FW: %s"
+set fast_reply = yes
 
 source $HOME/.config/mutt/dropin.sh|
