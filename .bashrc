@@ -74,7 +74,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 eval base16_seti
 
-export PATH="$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:$(npm config --global get prefix)/bin:$PATH"
+export PATH="$HOME/.bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:$(npm config --global get prefix)/bin:$PATH"
 
 
 # added by travis gem
