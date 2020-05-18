@@ -74,8 +74,16 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 eval base16_seti
 
-export PATH="$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:$(npm config --global get prefix)/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin:$(npm config --global get prefix)/bin:$(go env GOPATH)/bin:$PATH"
 
 
 # added by travis gem
 [ -f /home/seitz/.travis/travis.sh ] && source /home/seitz/.travis/travis.sh
+
+# added by travis gem
+[ -f /home/jseitz/.travis/travis.sh ] && source /home/jseitz/.travis/travis.sh
+source /usr/share/nvm/init-nvm.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
