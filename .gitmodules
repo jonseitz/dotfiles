@@ -10,9 +10,6 @@
 [submodule ".config/nvim/bundle/base16-vim"]
 	path = .config/nvim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
-[submodule ".config/nvim/bundle/vim-javascript"]
-	path = .config/nvim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript
 [submodule "builds/digikam-git"]
 	path = builds/digikam-git
 	url = https://aur.archlinux.org/digikam-git.git
@@ -154,9 +151,6 @@
 [submodule ".config/nvim/bundle/nerdcommenter"]
 	path = .config/nvim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
-[submodule ".config/nvim/bundle/vim-jsdoc"]
-	path = .config/nvim/bundle/vim-jsdoc
-	url = https://github.com/heavenshell/vim-jsdoc
 [submodule "builds/nlohmann-json"]
 	path = builds/nlohmann-json
 	url = https://aur.archlinux.org/nlohmann-json.git
@@ -166,9 +160,6 @@
 [submodule "builds/urxvt-resize-font-git"]
 	path = builds/urxvt-resize-font-git
 	url = https://aur.archlinux.org/urxvt-resize-font-git.git
-[submodule ".config/nvim/bundle/vim-jsx"]
-	path = .config/nvim/bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
 [submodule ".config/nvim/bundle/coc.nvim"]
 	path = .config/nvim/bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
