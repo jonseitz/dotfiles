@@ -5,9 +5,11 @@
     "javascript",
     "javascriptreact",
     "javascript.jsx",
+    "markdown",
     "python",
     "rust",
     "typescript",
+    "typescriptreact",
     "typescript.tsx",
     "typescript.jsx"
   ],
@@ -16,7 +18,6 @@
   "eslint.autoFix": true,
   "eslint.enable": true,
   "eslint.run": "onType",
-  "eslint.trace.server": "verbose",
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": [
     "typescript",
@@ -31,15 +32,21 @@
   "javascript.validate.enable": false,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "json.format.enable": true,
+  "markdownlint.config": {
+    "MD013": false,
+    "MD024": false
+  },
   "prettier.requireConfig": true,
   "prettier.eslintIntegration": true,
   "prettier.formatterPriority": -1,
   "prettier.disableSuccessMessage": true,
+  "prettier.proseWrap": "always",
   "suggest.autoTrigger": "always",
   "suggest.triggerAfterInsertEnter": true,
+  "todolist.monitor": true,
   "tsserver.enableJavascript": true,
   "tsserver.log": "terse",
-  "tsserver.trace.server": "verbose",
   "typescript.updateImportsOnFileMove.enable": true,
+  "typescript.format.enabled": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
