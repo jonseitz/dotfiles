@@ -1,6 +1,6 @@
 # GENERAL bindings
 bind generic,pager,index \CR group-reply
-bind index o display-message
+bind generic,pager,index o display-message
 bind index x tag-entry
 bind index * tag-pattern
 macro index \CT "<untag-pattern>.*<return>" "Clear all tags" 
