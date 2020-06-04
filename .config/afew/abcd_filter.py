@@ -11,3 +11,4 @@ class ABCDFilter(Filter):
         if '@' in original_to: 
             abcd_list = original_to.split('@')[0]
             self.add_tags(message, 'abcd', abcd_list)
+            self.remove_tags(message, 'new')
