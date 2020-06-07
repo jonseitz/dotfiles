@@ -41,7 +41,7 @@ unset color_prompt force_color_prompt
 shopt -s autocd
 
 #show suggestions on missing commands
-if [[ -f /usr/share/dock/pkgfile/command-not-found.bash ]]; then
+if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]]; then
 	source /usr/share/doc/pkgfile/command-not-found.bash
 fi
 
@@ -50,20 +50,20 @@ if [[ -f /etc/bash_completion ]]; then
     /etc/bash_completion
 fi
 
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+if [[ -f ~/.bash_aliases ]]; then
+  . ~/.bash_aliases
 fi
 
-if [ -f ~/.bash_vars ]; then
-. ~/.bash_vars
+if [[ -f ~/.bash_vars ]]; then
+  . ~/.bash_vars
 fi
 
-if [ -f ~/.bash_private ]; then
-. ~/.bash_private
+if [[ -f ~/.bash_private ]]; then
+  . ~/.bash_private
 fi
 
-if [ -f ~/.resticrc ]; then
-. ~/.resticrc
+if [[ -f ~/.resticrc ]]; then
+  . ~/.resticrc
 fi
 
 # Base16 Shell
@@ -74,15 +74,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 eval base16_seti
 
-export PATH="$HOME/.bin:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:$(npm config --global get prefix)/bin:$PATH:$(go env GOPATH)/bin:$PATH"
-
 # added by travis gem
-[ -f /home/seitz/.travis/travis.sh ] && source /home/seitz/.travis/travis.sh
+[[ -f /home/seitz/.travis/travis.sh ]] && source /home/seitz/.travis/travis.sh
 
-# added by travis gem
-[ -f /home/jseitz/.travis/travis.sh ] && source /home/jseitz/.travis/travis.sh
-source /usr/share/nvm/init-nvm.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -f /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
