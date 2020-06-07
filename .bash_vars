@@ -1,4 +1,4 @@
-export BROWSER=/usr/bin/firefox-developer-edition
+export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/nvim
 export GIT_EDITOR=$EDITOR
 export TERMINAL=/usr/bin/alacritty
