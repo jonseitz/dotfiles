@@ -229,3 +229,12 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+hi CocCursorRange ctermbg=19
+nmap <expr> <silent> <C-d> <SID>select_current_word()
+function! s:select_current_word()
+  if !get(g:, 'coc_cursors_activated', 0)
+    return "\<Plug>(coc-cursors-word)"
+  endif
+  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+endfunc
