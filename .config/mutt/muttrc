@@ -21,5 +21,7 @@ set nm_exclude_tags = "deleted"
 set attach_save_dir = "~/Downloads/"
 set forward_format = "FW: %s"
 set fast_reply = yes
+set abort_noattach = ask-yes
+set abort_noattach_regex = "\\<attach(|ed|ments?)\\>"
 
 source $HOME/.config/mutt/dropin.sh|
