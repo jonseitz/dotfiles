@@ -4,11 +4,11 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-if [[ `which npm > /dev/null` ]]; then
+if [[ `which npm 2&> /dev/null` ]]; then
   NPM_PATH="$(npm config --global get prefix)/bin"
 fi
 
-if [[ `which go > /dev/null` ]]; then
+if [[ `which go 2&> /dev/null` ]]; then
   GO_PATH="$(go env GOPATH)/bin"
 fi
 
