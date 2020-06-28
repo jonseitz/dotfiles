@@ -2,8 +2,11 @@
     "layer": "top",
     "height": 30,
     "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-center": ["sway/window"],
+    "modules-center": [],
     "modules-right": [
+      "custom/github-issues",
+      "custom/github-reviews",
+      "custom/github",
       "backlight",
       "pulseaudio",
       "memory",
@@ -98,5 +101,23 @@
         },
         "on-click": "pulsemixer --toggle-mute",
         "on-click-right": "pavucontrol"
+    },
+    "custom/github-issues": {
+        "format": "{} ",
+        "return-type": "json",
+        "interval": 60,
+        "exec": "$HOME/.config/waybar/github-issue-count.sh"
+    },
+    "custom/github-reviews": {
+        "format": "{} 療",
+        "return-type": "json",
+        "interval": 60,
+        "exec": "$HOME/.config/waybar/github-review-count.sh"
+    },
+    "custom/github": {
+        "format": "{} ",
+        "return-type": "json",
+        "interval": 60,
+        "exec": "$HOME/.config/waybar/github-notification-count.sh"
     }
 }

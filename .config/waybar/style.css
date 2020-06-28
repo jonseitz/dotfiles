@@ -51,7 +51,21 @@ window#waybar.hidden {
     border-bottom: 3px solid @white;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#custom-github,
+#custom-github-issues,
+#custom-github-reviews {
     padding: 0 8px;
     color: @white;
     background: @gray;
@@ -61,7 +75,8 @@ window#waybar.hidden {
 #clock,
 #battery,
 #network,
-#idle_inhibitor {
+#idle_inhibitor,
+#custom-github {
   border-bottom-color: @white;
 }
 
@@ -89,6 +104,18 @@ label:focus {
     background-color: @black;
 }
 
+#custom-github,
+#custom-github-issues,
+#custom-github-reviews {
+    border-bottom-color: @cyan;
+}
+
+#custom-github-issues.gh-error,
+#custom-github-reviews.gh-error {
+    color: @red;
+    background-color: @white;
+}
+
 #cpu,
 #memory,
 #temperature {
@@ -100,6 +127,7 @@ label:focus {
     border-bottom-color: @yellow;
 }
 
+#custom-github,
 #pulseaudio,
 #cpu,
 #battery {
