@@ -65,7 +65,8 @@ window#waybar.hidden {
 #idle_inhibitor,
 #custom-github,
 #custom-github-issues,
-#custom-github-reviews {
+#custom-github-reviews,
+#custom-inbox {
     padding: 0 8px;
     color: @white;
     background: @gray;
@@ -104,6 +105,7 @@ label:focus {
     background-color: @black;
 }
 
+#custom-inbox,
 #custom-github,
 #custom-github-issues,
 #custom-github-reviews {
@@ -127,7 +129,7 @@ label:focus {
     border-bottom-color: @yellow;
 }
 
-#custom-github,
+#custom-inbox,
 #pulseaudio,
 #cpu,
 #battery {
