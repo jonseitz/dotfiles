@@ -9,11 +9,10 @@ from afew.FilterRegistry import register_filter
 @register_filter
 class Notifications(Filter):
     message = 'Show notifications when new messages are received'
-    query = 'tag:inbox'
+    query = 'tag:new'
     def handle_message(self, message):
         Notify.init("New Mail")
         sender = message.get_header('From')
         subject = message.get_header('Subject')
-        NewMail = Notify.Notification.new('New Mail', 'From: {}\nSubj: {}'.format(sender,subject))
+        NewMail = Notify.Notification.new(sender, subject)
         NewMail.show()
-        Notify.uninit()
