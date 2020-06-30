@@ -3,9 +3,9 @@ unset imap_passive
 # Keep the IMAP connection alive by polling intermittently (time in seconds).
 set imap_keepalive = 300
 set mail_check = 60
-set header_cache = ~/.cache/mutt
-set message_cachedir = "~/.cache/mutt"
-set mailcap_path 	= $HOME/.config/mutt/mailcap
+set header_cache = ~/.cache/neomutt
+set message_cachedir = "~/.cache/neomutt"
+set mailcap_path 	= $HOME/.config/neomutt/mailcap
 auto_view text/html text/calendar application/ics
 alternative_order text/calendar text/plain text/html
 set sidebar_visible
@@ -24,4 +24,4 @@ set fast_reply = yes
 set abort_noattach = ask-yes
 set abort_noattach_regex = "\\<attach(|ed|ments?)\\>"
 
-source $HOME/.config/mutt/dropin.sh|
+source $HOME/.config/neomutt/dropin.sh|
