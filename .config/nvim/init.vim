@@ -186,6 +186,22 @@ nnoremap <Right> <Nop>
 vnoremap <Right> <Nop>
 inoremap <Right> <Nop>
 tnoremap <Right> <Nop>
+nnoremap <C-Left> <Nop>
+vnoremap <C-Left> <Nop>
+inoremap <C-Left> <Nop>
+tnoremap <C-Left> <Nop>
+nnoremap <C-Right> <Nop>
+vnoremap <C-Right> <Nop>
+inoremap <C-Right> <Nop>
+tnoremap <C-Right> <Nop>
+nnoremap <M-Left> <Nop>
+vnoremap <M-Left> <Nop>
+inoremap <M-Left> <Nop>
+tnoremap <M-Left> <Nop>
+nnoremap <M-Right> <Nop>
+vnoremap <M-Right> <Nop>
+inoremap <M-Right> <Nop>
+tnoremap <M-Right> <Nop>
 
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Esc> :noh<Enter><Esc>
