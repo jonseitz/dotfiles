@@ -125,7 +125,8 @@
     "format": "{} ",
     "return-type": "json",
     "interval": 60,
-    "exec": "$HOME/.config/waybar/github-notification-count.sh"
+    "exec": "$HOME/.config/waybar/github-notification-count.sh",
+    "on-click": "xdg-open https://github.com/notifications"
   },
   "custom/inbox": {
     "format": "{} ",
