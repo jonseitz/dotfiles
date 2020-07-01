@@ -13,9 +13,6 @@
 [submodule "builds/digikam-git"]
 	path = builds/digikam-git
 	url = https://aur.archlinux.org/digikam-git.git
-[submodule "builds/emojione-color-font"]
-	path = builds/emojione-color-font
-	url = https://aur.archlinux.org/emojione-color-font.git
 [submodule "builds/equilux-theme"]
 	path = builds/equilux-theme
 	url = https://aur.archlinux.org/equilux-theme.git
@@ -46,9 +43,6 @@
 [submodule "builds/materia-theme"]
 	path = builds/materia-theme
 	url = https://aur.archlinux.org/materia-theme.git
-[submodule "builds/minikube-bin"]
-	path = builds/minikube-bin
-	url = https://aur.archlinux.org/minikube-bin.git
 [submodule "builds/neovim-drop-in"]
 	path = builds/neovim-drop-in
 	url = https://aur.archlinux.org/neovim-drop-in.git
@@ -169,9 +163,6 @@
 [submodule "builds/gtk-theme-shades-of-gray"]
 	path = builds/gtk-theme-shades-of-gray
 	url = https://aur.archlinux.org/gtk-theme-shades-of-gray.git
-[submodule "builds/joplin"]
-	path = builds/joplin
-	url = https://aur.archlinux.org/joplin.git
 [submodule ".config/nvim/bundle/vim-devicons"]
 	path = .config/nvim/bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
@@ -193,21 +184,12 @@
 [submodule "builds/bitwarden-cli"]
 	path = builds/bitwarden-cli
 	url = https://aur.archlinux.org/bitwarden-cli.git
-[submodule "builds/bitwarden-rofi"]
-	path = builds/bitwarden-rofi
-	url = https://aur.archlinux.org/bitwarden-rofi.git
 [submodule "builds/wofi"]
 	path = builds/wofi
 	url = https://aur.archlinux.org/wofi.git
-[submodule "builds/spotify-tui"]
-	path = builds/spotify-tui
-	url = https://aur.archlinux.org/spotify-tui.git
 [submodule "builds/rem2ics"]
 	path = builds/rem2ics
 	url = https://aur.archlinux.org/rem2ics.git
-[submodule "builds/mail2rem-git"]
-	path = builds/mail2rem-git
-	url = https://aur.archlinux.org/mail2rem-git.git
 [submodule "builds/ical2rem"]
 	path = builds/ical2rem
 	url = https://aur.archlinux.org/ical2rem.git
@@ -220,3 +202,15 @@
 [submodule "builds/protonmail-bridge-bin"]
 	path = builds/protonmail-bridge-bin
 	url = https://aur.archlinux.org/protonmail-bridge-bin.git
+[submodule "builds/spotify-tui-bin"]
+	path = builds/spotify-tui-bin
+	url = https://aur.archlinux.org/spotify-tui-bin
+[submodule "builds/spotifyd-bin-full"]
+	path = builds/spotifyd-bin-full
+	url = https://aur.archlinux.org/spotifyd-bin-full
+[submodule "builds/ly"]
+	path = builds/ly
+	url = https://aur.archlinux.org/ly
+[submodule "builds/deno-bin"]
+	path = builds/deno-bin
+	url = https://aur.archlinux.org/deno-bin
