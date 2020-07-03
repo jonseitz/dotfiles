@@ -5,7 +5,7 @@ if [[ ! -f $HOME/.config/gh/hosts.yml ]]; then
   exit 0
 fi
 
-notifications=`gh api notifications?all=true`
+notifications=`gh api notifications`
 
 notification_count=`echo $notifications | jq -j '. | length'`
 
