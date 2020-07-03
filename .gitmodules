@@ -214,3 +214,9 @@
 [submodule "builds/deno-bin"]
 	path = builds/deno-bin
 	url = https://aur.archlinux.org/deno-bin
+[submodule "/home/seitz/.tmux/plugins/tpm"]
+	path = /home/seitz/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule ".config/nvim/bundle/vim-obsession"]
+	path = .config/nvim/bundle/vim-obsession
+	url = git://github.com/tpope/vim-obsession.git
