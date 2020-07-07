@@ -1,3 +1,5 @@
 text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -collapse_br_tags -dump %s; nametemplate=%s.html; copiousoutput
 text/calendar; fmt_ical %s; copiousoutput;
 application/ics; fmt_ical %s; copiousoutput;
+image/*; feh -g 640x480 -. '%s'; test=test -n "$DISPLAY"
+application/pdf; evince-previewer %s; test=test -n "$DISPLAY"
