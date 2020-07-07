@@ -1,6 +1,9 @@
 # start a terminal
 bindsym $mod+Return exec alacritty 
 
+# Launch a browser
+bindsym $mod+Shift+Return exec $BROWSER
+
 # Open Rofi launcher
 bindsym Mod1+space exec wofi --conf $HOME/.config/wofi/config
 

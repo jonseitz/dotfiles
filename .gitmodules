@@ -220,3 +220,6 @@
 [submodule ".config/nvim/bundle/vim-obsession"]
 	path = .config/nvim/bundle/vim-obsession
 	url = git://github.com/tpope/vim-obsession.git
+[submodule ".config/nvim/bundle/vim-dadbod"]
+	path = .config/nvim/bundle/vim-dadbod
+	url = git://github.com/tpope/vim-dadbod.git
