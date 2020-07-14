@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+lpass ls --format="%an (%au) -- ID: %ai"\
+  | fzf -i --print0 \
+  | grep -EZzos [0-9]+$ -\
+  | xargs -0 -n1 \
+  lpass show --password --clip
