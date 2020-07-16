@@ -1,0 +1,2 @@
+WRAP yes
+COMMAND /sbin/qutebrowser --target=tab %s
