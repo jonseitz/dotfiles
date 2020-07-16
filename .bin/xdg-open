@@ -1,6 +1,11 @@
 #!/bin/sh
 case "${1%%:*}" in
 	http|https)
+    case "${1##*.}" in
+      png|jpg|jpeg|gif)
+        exec feh "$1"
+        ;;
+    esac
 		exec qutebrowser "$1"
 		;;
 	mailto)

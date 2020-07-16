@@ -1,2 +1,2 @@
 WRAP yes
-COMMAND /sbin/qutebrowser --target=tab %s
+COMMAND xdg-open %s
