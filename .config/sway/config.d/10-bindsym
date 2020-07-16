@@ -5,7 +5,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec $BROWSER
 
 # Open Rofi launcher
-bindsym Mod1+space exec wofi --conf $HOME/.config/wofi/config
+bindsym Mod1+space exec bemenu_drun
 
 # cycle through scatchpad
 bindsym Mod1+Tab scratchpad show
