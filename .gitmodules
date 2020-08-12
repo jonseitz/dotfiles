@@ -223,3 +223,6 @@
 [submodule ".config/nvim/bundle/vim-dadbod"]
 	path = .config/nvim/bundle/vim-dadbod
 	url = git://github.com/tpope/vim-dadbod.git
+[submodule ".config/nvim/bundle/vim-rhubarb"]
+	path = .config/nvim/bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubard.git
