@@ -10,7 +10,7 @@ auto_view text/html text/calendar application/ics
 alternative_order text/calendar text/plain text/html
 set sidebar_visible
 set mail_check_stats
-set sidebar_format = '%B%* %?N?%N/?%S'
+set sidebar_format = '%D%* %?N?%N/?%S'
 set auto_tag = yes
 set sort = threads
 set query_command = "khard email --parsable %s"
