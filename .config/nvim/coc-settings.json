@@ -43,10 +43,10 @@
   "prettier.proseWrap": "always",
   "suggest.autoTrigger": "always",
   "suggest.triggerAfterInsertEnter": true,
-  "todolist.monitor": true,
   "tsserver.enableJavascript": true,
   "tsserver.log": "terse",
   "typescript.updateImportsOnFileMove.enable": true,
   "typescript.format.enabled": false,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.preferences.importModuleSpecifier": "relative"
 }
