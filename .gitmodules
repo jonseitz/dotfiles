@@ -64,9 +64,6 @@
 [submodule "builds/python2-spotipy"]
 	path = builds/python2-spotipy
 	url = https://aur.archlinux.org/python2-spotipy.git
-[submodule "builds/reflector-timer"]
-	path = builds/reflector-timer
-	url = https://aur.archlinux.org/reflector-timer.git
 [submodule "builds/robo3t-bin"]
 	path = builds/robo3t-bin
 	url = https://aur.archlinux.org/robo3t-bin.git
