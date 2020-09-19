@@ -169,9 +169,6 @@
 [submodule ".config/nvim/bundle/i3config.vim"]
 	path = .config/nvim/bundle/i3config.vim
 	url = git@github.com:mboughaba/i3config.vim.git
-[submodule "builds/nvm"]
-	path = builds/nvm
-	url = https://aur.archlinux.org/nvm.git
 [submodule "builds/zoom"]
 	path = builds/zoom
 	url = https://aur.archlinux.org/zoom.git
