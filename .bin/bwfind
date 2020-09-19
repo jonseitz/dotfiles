@@ -1,20 +1,12 @@
-#!/usr/bin/sh
-(
-  export BW_SESSION=`bw unlock --raw`
-  if [[ $BW_SESSION ]]; then
-    bwdata=`bw list items`;
-    if [[ $bwdata ]]; then
-      account_id=`echo $bwdata\
-        | jq '.[] | .name + " (" + .login.username + ") -- ID: " + .id'\
-        | fzf -i\
-        | sed 's/"//g'\
-        | grep -Zsho '[a-f0-9-]\+$' -`
-      if [[ ! -z $account_id ]]; then
-        bw get password $account_id\
-        | wl-copy
-      fi
-    fi
+#!/usr/bin/bash
+export BW_SESSION=`bw unlock --raw`
+if [[ $BW_SESSION ]]; then
+  bwdata=`bw list items`;
+  if [[ $bwdata ]]; then
+    echo $bwdata\
+      | jq '.[] | .name + " (" + .login.username + ") -- ID: " + .id'\
+      | sed 's/\"//g'\
+      | fzf -i\
+        --bind "enter:execute(bw get password {-1} | wl-copy)"
   fi
-  bw lock > /dev/null;
-  unset BW_SESSION;
-)
+fi
