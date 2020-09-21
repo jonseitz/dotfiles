@@ -6,7 +6,7 @@ case "${1%%:*}" in
         exec feh "$1"
         ;;
     esac
-		exec qutebrowser "$1"
+		exec /sbin/qutebrowser --target=tab "$1"
 		;;
 	mailto)
 		exec neomutt "$1"

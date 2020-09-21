@@ -76,5 +76,3 @@ eval base16_seti
 
 # added by travis gem
 [[ -f /home/seitz/.travis/travis.sh ]] && source /home/seitz/.travis/travis.sh
-
-[[ -f /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh

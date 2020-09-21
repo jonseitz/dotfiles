@@ -37,9 +37,6 @@
 [submodule "builds/libspotify"]
 	path = builds/libspotify
 	url = https://aur.archlinux.org/libspotify.git
-[submodule "builds/masterpdfeditor"]
-	path = builds/masterpdfeditor
-	url = https://aur.archlinux.org/masterpdfeditor.git
 [submodule "builds/materia-theme"]
 	path = builds/materia-theme
 	url = https://aur.archlinux.org/materia-theme.git
@@ -64,9 +61,6 @@
 [submodule "builds/python2-spotipy"]
 	path = builds/python2-spotipy
 	url = https://aur.archlinux.org/python2-spotipy.git
-[submodule "builds/reflector-timer"]
-	path = builds/reflector-timer
-	url = https://aur.archlinux.org/reflector-timer.git
 [submodule "builds/robo3t-bin"]
 	path = builds/robo3t-bin
 	url = https://aur.archlinux.org/robo3t-bin.git
@@ -172,9 +166,6 @@
 [submodule ".config/nvim/bundle/i3config.vim"]
 	path = .config/nvim/bundle/i3config.vim
 	url = git@github.com:mboughaba/i3config.vim.git
-[submodule "builds/nvm"]
-	path = builds/nvm
-	url = https://aur.archlinux.org/nvm.git
 [submodule "builds/zoom"]
 	path = builds/zoom
 	url = https://aur.archlinux.org/zoom.git
@@ -184,15 +175,6 @@
 [submodule "builds/bitwarden-cli"]
 	path = builds/bitwarden-cli
 	url = https://aur.archlinux.org/bitwarden-cli.git
-[submodule "builds/wofi"]
-	path = builds/wofi
-	url = https://aur.archlinux.org/wofi.git
-[submodule "builds/rem2ics"]
-	path = builds/rem2ics
-	url = https://aur.archlinux.org/rem2ics.git
-[submodule "builds/ical2rem"]
-	path = builds/ical2rem
-	url = https://aur.archlinux.org/ical2rem.git
 [submodule "builds/ripmime"]
 	path = builds/ripmime
 	url = https://aur.archlinux.org/ripmime.git
@@ -202,12 +184,6 @@
 [submodule "builds/protonmail-bridge-bin"]
 	path = builds/protonmail-bridge-bin
 	url = https://aur.archlinux.org/protonmail-bridge-bin.git
-[submodule "builds/spotify-tui-bin"]
-	path = builds/spotify-tui-bin
-	url = https://aur.archlinux.org/spotify-tui-bin
-[submodule "builds/spotifyd-bin-full"]
-	path = builds/spotifyd-bin-full
-	url = https://aur.archlinux.org/spotifyd-bin-full
 [submodule "builds/ly"]
 	path = builds/ly
 	url = https://aur.archlinux.org/ly
