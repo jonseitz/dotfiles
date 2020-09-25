@@ -25,6 +25,9 @@ c.downloads.position = 'bottom'
 
 c.editor.command = ['alacritty', '-e', 'nvim', '{file}']
 
+c.fonts.default_family = 'Hack Nerd Font'
+c.fonts.default_size = '14px'
+
 c.input.insert_mode.auto_load = True
 
 c.qt.force_platformtheme = 'qt5ct'
@@ -50,7 +53,7 @@ c.tabs.position = 'top'
 c.window.hide_decoration = True
 c.window.title_format = '{perc}{current_title}{title_sep}qutebrowser'
 
-c.zoom.default = '100%'
+c.zoom.default = '125%'
 c.zoom.levels = ['50%', '67%', '75%', '100%', '125%', '150%', '175%', '200%']
 config.bind('<z><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu"')
 config.bind('<z><u><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu" --username-only')

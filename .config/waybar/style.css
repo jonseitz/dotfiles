@@ -12,7 +12,7 @@
     border: none;
     border-radius: 0;
     font-family: NotoSans Nerd Font, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     min-height: 0;
 }
 
@@ -133,7 +133,19 @@ label:focus {
 #pulseaudio,
 #cpu,
 #battery {
+  padding-right: 10px;
   margin-right: 15px;
+}
+
+#custom-github,
+#backlight,
+#memory,
+#network {
+  padding-left: 10px;
+}
+
+#battery {
+  padding-right: 15px;
 }
 
 #pulseaudio.muted {
