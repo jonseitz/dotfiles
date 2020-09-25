@@ -1,4 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Log Out
+GenericName=logout
+Categories=Power
 Exec=swaymsg exit

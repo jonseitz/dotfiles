@@ -1,4 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Hibernate
+GenericName=hibernate
+Categories=Power
 Exec=systemctl hibernate 

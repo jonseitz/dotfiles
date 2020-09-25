@@ -2,4 +2,6 @@
 Type=Application
 Description=Suspend the computer
 Name=Sleep
+GenericName=suspend
+Categories=Power
 Exec=/usr/bin/systemctl suspend 
