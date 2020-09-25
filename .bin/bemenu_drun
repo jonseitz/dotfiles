@@ -1,7 +1,20 @@
 #! /usr/bin/bash
 
 j4-dmenu-desktop\
- --dmenu='bemenu -bin --prompt="Launch:" --nb "#3f3f3f" --nf "#dcdccc" --fn "Hack Nerd Font 12"'\
- --term=$TERMINAL\
- --no-generic\
- --use-xdg-de
+  --dmenu='\
+    bemenu -bin --prompt=""\
+      --fn "Hack Nerd Font 16"\
+      --scb="#282a2b"\
+      --scf="#d6d6d6"\
+      --nb="#282a2b"\
+      --nf="#d6d6d6"\
+      --hb="#282a2b"\
+      --hf="#43a5d5"\
+      --sb="#282a2b"\
+      --sf="#43a5d5"\
+      --fb="#282a2b"\
+      --ff="#9fca56"\
+  '\
+  --term=$TERMINAL\
+  --no-generic\
+  --use-xdg-de

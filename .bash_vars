@@ -2,4 +2,3 @@ export BROWSER=/sbin/qutebrowser
 export EDITOR=/usr/bin/nvim
 export GIT_EDITOR=$EDITOR
 export TERMINAL=/usr/bin/alacritty
-export BEMENU_OPTS='-bin --nb "#3f3f3f" --nf "#dcdccc" --fn "Hack Nerd Font 12"'
