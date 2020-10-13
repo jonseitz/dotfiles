@@ -55,6 +55,6 @@ c.window.title_format = '{perc}{current_title}{title_sep}qutebrowser'
 
 c.zoom.default = '125%'
 c.zoom.levels = ['50%', '67%', '75%', '100%', '125%', '150%', '175%', '200%']
-config.bind('<z><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu"')
-config.bind('<z><u><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu" --username-only')
-config.bind('<z><p><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu" --password-only')
+config.bind('<z><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu -bin"')
+config.bind('<z><u><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu -bin" --username-only')
+config.bind('<z><p><l>', 'spawn --userscript qute-pass --dmenu-invocation="bemenu -bin" --password-only')
