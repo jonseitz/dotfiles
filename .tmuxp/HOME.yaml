@@ -1,0 +1,39 @@
+session_name: HOME
+start_directory: /home/seitz/
+windows:
+- window_name: neomutt
+  focus: 'true' 
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: neomutt
+  start_directory: /home/seitz
+- window_name: weechat
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: weechat
+  start_directory: /home/seitz
+- window_name: ikhal
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: ikhal 
+  start_directory: /home/seitz
+- window_name: journal
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: journalctl -xef --user 
+  start_directory: /home/seitz
+- window_name: bash 
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command:
+  start_directory: /home/seitz
