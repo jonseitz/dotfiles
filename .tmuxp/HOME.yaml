@@ -24,11 +24,13 @@ windows:
     shell_command: ikhal 
   start_directory: /home/seitz
 - window_name: journal
+  layout: main-vertical
   options:
     automatic-rename: 'off'
   panes:
   - focus: 'true'
     shell_command: journalctl -xef --user 
+  - pane
   start_directory: /home/seitz
 - window_name: bash 
   options:
